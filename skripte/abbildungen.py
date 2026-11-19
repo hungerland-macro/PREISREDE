@@ -175,6 +175,45 @@ def abbildung3(infl, anf, ziel, schrift, b=15.0, h=6.0, gr=8, lw=3.5):
     speichern(fig, ziel, "Abb3_Anfragen_nach_Art", schrift)
 
 
+def datenmappe(plenum, infl, anf, ziel):
+    """Zahlen hinter den Abbildungen als xlsx, ein Blatt je Abbildung."""
+    from openpyxl import Workbook
+    from openpyxl.styles import Font
+    ja = sorted(anf)
+    nenner = {j: int(anf[j]["anfragen_gesamt"]) for j in ja}
+    ms = {j: int(anf[j]["preisniveau"]) + int(anf[j]["messung"]) for j in ja}
+    e = {j: int(anf[j]["einzelne_preise"]) for j in ja}
+    f_ms, f_e = dict(zip(ja, fenster(ja, ms, nenner))), dict(zip(ja, fenster(ja, e, nenner)))
+    jahre = sorted(plenum)
+    wb = Workbook()
+    blaetter = [
+        ("Abb1", ["Jahr", "Preiswörter je Mio. Wörter", "Inflationsrate in %"],
+         [[j, plenum[j], infl.get(j)] for j in jahre]),
+        ("Abb2", ["Jahr", "Preiswörter je Mio. Wörter", "Anfragen zu Preisniveau und Messung je 1000 Anfragen"],
+         [[j, plenum[j], round(1000 * ms[j] / nenner[j], 2) if j in ja else None] for j in jahre]),
+        ("Abb3", ["Jahr", "Anfragen zu einzelnen Preisen je 1000, Fünfjahresfenster",
+                  "Anfragen zu Preisniveau und Messung je 1000, Fünfjahresfenster", "Inflationsrate in %"],
+         [[j, round(f_e[j], 2) if j in ja else None, round(f_ms[j], 2) if j in ja else None, infl.get(j)]
+          for j in jahre]),
+    ]
+    ws = wb.active
+    for i, (name, kopf, zeilen) in enumerate(blaetter):
+        ws = ws if i == 0 else wb.create_sheet()
+        ws.title = name
+        ws.append(kopf)
+        for c in ws[1]:
+            c.font = Font(bold=True)
+        for z in zeilen:
+            ws.append(z)
+    q = wb.create_sheet("Quellen")
+    for z in [["Plenum", "Fobbe, S. (2026), CPP-BT, Version 2026-01-17, Zenodo, doi:10.5281/zenodo.18177196, CC0; eigene Zählung"],
+              ["Anfragen", "Deutscher Bundestag, DIP, Abruf 01.11.2026; eigene Codierung"],
+              ["Inflation bis 1991", "Statistisches Bundesamt, Lange Reihen ab 1948 (12/2022), Preisindex für die Lebenshaltung, 4-Personen-Haushalte von Arbeitern und Angestellten mit mittlerem Einkommen, früheres Bundesgebiet"],
+              ["Inflation ab 1992", "Statistisches Bundesamt, VPI Deutschland 2020 = 100, über Bundesbank BBDP1.A.DE.N.VPI.C.A00000.I20.A"]]:
+        q.append(z)
+    wb.save(os.path.join(ziel, "Abbildungen_Daten.xlsx"))
+
+
 if __name__ == "__main__":
     ziel = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HIER, "..", "abbildungen")
     os.makedirs(ziel, exist_ok=True)
@@ -187,6 +226,7 @@ if __name__ == "__main__":
     abbildung1(plenum, infl, ziel, schrift)
     abbildung2(plenum, anf, ziel, schrift)
     abbildung3(infl, anf, ziel, schrift)
+    datenmappe(plenum, infl, anf, ziel)
     print(f"Schrift: {schrift}. Abbildungen in {ziel}")
     if schrift != "Arial Narrow":
         print("Hinweis: Arial Narrow nicht gefunden. PDF/PNG nutzen Ersatzschrift, "

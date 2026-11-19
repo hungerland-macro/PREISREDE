@@ -7,11 +7,11 @@ lang: de
 
 **Der Beitrag gibt die persönliche Auffassung des Autors wieder.**
 
-### Zusammenfassung
+### Abstract
 
-Wie stark sich ein Parlament mit Preisen befasst, lässt sich messen. Dieser Beitrag zählt Preis- und Inflationswörter in allen 4.608 Plenarprotokollen des Deutschen Bundestages von 1949 bis 2025 und stellt die Reihe neben die Inflationsrate. Vier Befunde: Erstens läuft die Debatte eng mit der gemessenen Inflation, 1973 und 2022 liegen fast gleichauf. Zweitens hat sich die Form gewandelt. Bis in die 1980er Jahre war das Preisthema ein Dauerbrenner, der kaum auf die laufende Rate reagierte; seit 1990 liegt das Grundniveau tief, und die Debatte springt erst bei einem Anstieg an. Drittens zeigt sich seit 1990 eine Schwelle bei rund 3,7 %, nahe an dem, was die internationale Literatur für Haushalte und Medien schätzt. Nach 2022 fiel die Aufmerksamkeit schneller zurück, als der dort beschriebene Nachhall erwarten lässt. Viertens zeigen parlamentarische Anfragen ein anderes Bild als die Plenardebatte: Das Instrument entscheidet mit.
+Der Beitrag misst, wie oft der Bundestag über Preise und Inflation spricht: Er zählt Preiswörter je Million Wörter in allen 4.608 Plenarprotokollen von 1949 bis 2025. Die Reihe läuft eng mit der Inflationsrate, die Gipfel 1973 und 2022 sind fast gleich hoch. Seit 1990 hat sich die Form gewandelt: Aus einem Dauerthema wurde ein Schockthema, das erst oberhalb von rund 3,7 % Inflation anspringt und nach 2022 rascher abebbte als die Aufmerksamkeit der Haushalte. Parlamentarische Anfragen zeigen ein anderes Bild als das Plenum; das Messinstrument entscheidet mit. Für die Geldpolitik heißt das: Zwischen dem Ziel von 2 % und der Schwelle liegt ein politisch stiller Raum.
 
-JEL: E31, E58, D72
+JEL-Codes: E31, E58, D72
 
 ### Warum parlamentarische Aufmerksamkeit messen
 
@@ -34,6 +34,8 @@ Die Inflationsrate ist die jahresdurchschnittliche Veränderung gegenüber dem V
 Abbildung 1 zeigt beide Reihen. Der Gleichlauf ist deutlich, die Korrelation beträgt 0,57. Die beiden Gipfel liegen fast gleichauf: 371 Preiswörter je Million Wörter 1973 und 372 im Jahr 2022. Der Tiefpunkt der Reihe liegt 2017 bei 9,7, also bei einem Vierzigstel des Spitzenwerts.
 
 ![Abbildung 1: Preiswörter im Plenum und Inflationsrate, 1949 bis 2025. Linke Achse: Treffer des Wortfelds Preisniveau je Million Wörter der Plenarprotokolle. Rechte Achse: Veränderung des Preisindex gegenüber dem Vorjahr, Jahresdurchschnitt, ab 1950. Quellen: Fobbe (2026); Statistisches Bundesamt; eigene Berechnungen.](../abbildungen/Abb1_Plenum_Inflation.png)
+
+*Alt-Text: Die Abbildung zeigt von 1949 bis 2025 zwei Linien: wie oft im Bundestag Wörter wie Inflation oder Preisstabilität fallen, und die Inflationsrate. Beide Reihen laufen eng zusammen und haben ihre Gipfel 1973 und 2022 in fast gleicher Höhe. Seit 1990 bleibt die Preisrede bei niedriger Inflation sehr gering und springt nur 2022 hoch.*
 
 Eine einfache Schätzung mit dem Vorjahreswert als erklärender Größe gibt dem Eindruck Zahlen (Tabelle 1, Spalte 1). Ein Prozentpunkt mehr Inflation hebt die Preisrede im selben Jahr um rund 12 %, auf lange Sicht um rund 40 %. Der Koeffizient des Vorjahreswerts liegt bei 0,67: Eine Debatte, die einmal läuft, trägt sich über mehrere Jahre, auch wenn der Anlass nachlässt.
 
@@ -95,9 +97,13 @@ Entscheidend ist der zeitliche Verlauf (Abbildung 2). Von 1952 bis 1986 fragten 
 
 ![Abbildung 2: Zwei Instrumente, ein Thema. Linke Achse: Kleine und Große Anfragen zu Preisniveau und Messung je 1.000 Anfragen des Jahres, ab 1952. Rechte Achse: Preiswörter im Plenum je Million Wörter. Quellen: Deutscher Bundestag, DIP; Fobbe (2026); eigene Berechnungen.](../abbildungen/Abb2_Instrumente.png)
 
+*Alt-Text: Die Abbildung stellt die Preiswörter im Plenum als Linie neben die Zahl der Anfragen zum Preisniveau als Säulen, je Jahr ab 1952. In den Jahren der intensivsten Plenardebatte, 1973 bis 1975, gibt es keine einzige solche Anfrage. Wer nur Anfragen zählt, übersieht also den ersten Preisschock.*
+
 Für die Agendaforschung ist das keine Nebensache. Kristensen et al. (2023) zeigen an über 220.000 parlamentarischen Anfragen aus sieben Ländern, dass Parlamente stärker auf Verschlechterung als auf Verbesserung von Problemindikatoren reagieren. Ihr Untersuchungszeitraum endet 2015 und erfasst den jüngsten Preisschock nicht. Die hier vorgelegte Reihe zeigt, dass die Wahl des Instruments das Ergebnis mitbestimmt.
 
 ![Abbildung 3: Anfragen zu Preisen nach Art des Gegenstands, je 1.000 Anfragen, zentriertes gleitendes Fünfjahresfenster, dazu die Inflationsrate. Der hohe Wert der 1950er Jahre geht vollständig auf Anfragen zu einzelnen Preisen und zum Preisrecht zurück. Quellen: Deutscher Bundestag, DIP; Statistisches Bundesamt; eigene Berechnungen.](../abbildungen/Abb3_Anfragen_nach_Art.png)
+
+*Alt-Text: Die Abbildung zeigt Anfragen zu einzelnen Preisen und Anfragen zum Preisniveau, je 1.000 Anfragen und als Fünfjahresmittel, dazu die Inflationsrate. In den 1950er Jahren überwiegen Anfragen zu einzelnen Preisen und zum Preisrecht deutlich. Anfragen zum Preisniveau bleiben über die ganze Zeit selten.*
 
 Ein Nebenbefund betrifft die Messung selbst. Über Preisindex, Warenkorb und Preisstatistik wurde in den 1950er und 1960er Jahren weit mehr gesprochen als heute, mit Spitzen von 14 bis 17 Treffern je Million Wörter 1958 und 1971 gegenüber 0,3 bis 3,3 in den Jahren 2016 bis 2025. Die große Ausnahme bildet die Revision des Verbraucherpreisindex 2023, die es bis in eine Kleine Anfrage schaffte.
 
@@ -112,6 +118,10 @@ Drittens eine Erwartung für die nächsten Jahre. Der schnelle Rückbau nach 202
 ### Grenzen
 
 Das Maß zählt Wörter, nicht Positionen. Es unterscheidet nicht, ob jemand vor Inflation warnt oder sie für überschätzt hält, und es trennt Regierung und Opposition nicht. Die Rednerebene ließe sich über ein Korpus erschließen, das Fraktionen seit 1949 zuordnet; das steht aus. Die Wortfelder sind eine Setzung, auch wenn die Ergebnisse gegenüber Erweiterungen des Katalogs stabil bleiben. Die Protokolle der frühen Wahlperioden stammen aus der Texterkennung gescannter Vorlagen; Lesefehler sind möglich, verteilen sich aber über alle Jahre. Schließlich bleibt die Zahl der Beobachtungen klein: 75 Jahre in den Schätzungen, davon fünf ab der geschätzten Schwelle. Daten und Skripte liegen offen unter https://github.com/hungerland-macro/anfragen.
+
+### Hinweis zum Einsatz von KI
+
+Bei der Erstellung des Beitrags kam das Sprachmodell Claude (Anthropic) zum Einsatz. Es schrieb nach Vorgaben des Autors die Python-Skripte für den Abruf der Anfragen, die Wortzählung im Korpus, die Schätzungen und die Abbildungen, entwarf Teile des Textes, prüfte Zahlen und Literaturangaben gegen die Originalquellen und redigierte den Text. Fragestellung, Wortfelder, Codierung der Anfragen, Deutung der Ergebnisse und die Endfassung verantwortet der Autor. Skripte und Daten liegen offen, sodass alle Ergebnisse nachgerechnet werden können.
 
 ### Literatur
 
