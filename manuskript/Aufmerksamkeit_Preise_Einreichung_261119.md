@@ -117,7 +117,7 @@ Drittens eine Erwartung für die nächsten Jahre. Der schnelle Rückbau nach 202
 
 ### Grenzen
 
-Das Maß zählt Wörter, nicht Positionen. Es unterscheidet nicht, ob jemand vor Inflation warnt oder sie für überschätzt hält, und es trennt Regierung und Opposition nicht. Die Rednerebene ließe sich über ein Korpus erschließen, das Fraktionen seit 1949 zuordnet; das steht aus. Die Wortfelder sind eine Setzung, auch wenn die Ergebnisse gegenüber Erweiterungen des Katalogs stabil bleiben. Die Protokolle der frühen Wahlperioden stammen aus der Texterkennung gescannter Vorlagen; Lesefehler sind möglich, verteilen sich aber über alle Jahre. Schließlich bleibt die Zahl der Beobachtungen klein: 75 Jahre in den Schätzungen, davon fünf ab der geschätzten Schwelle. Daten und Skripte liegen offen unter https://github.com/hungerland-macro/anfragen.
+Das Maß zählt Wörter, nicht Positionen. Es unterscheidet nicht, ob jemand vor Inflation warnt oder sie für überschätzt hält, und es trennt Regierung und Opposition nicht. Die Rednerebene ließe sich über ein Korpus erschließen, das Fraktionen seit 1949 zuordnet; das steht aus. Die Wortfelder sind eine Setzung, auch wenn die Ergebnisse gegenüber Erweiterungen des Katalogs stabil bleiben. Die Protokolle der frühen Wahlperioden stammen aus der Texterkennung gescannter Vorlagen; Lesefehler sind möglich, verteilen sich aber über alle Jahre. Schließlich bleibt die Zahl der Beobachtungen klein: 75 Jahre in den Schätzungen, davon fünf ab der geschätzten Schwelle. Daten und Skripte liegen offen unter https://github.com/hungerland-macro/PREISREDE.
 
 ### Hinweis zum Einsatz von KI
 

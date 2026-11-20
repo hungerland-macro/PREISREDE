@@ -1,4 +1,4 @@
-# Parlamentarische Aufmerksamkeit für Preise, 1949 bis 2025
+# PREISREDE: Parlamentarische Aufmerksamkeit für Preise, 1949 bis 2025
 
 Daten und Skripte zur Note „Wann das Parlament über Preise spricht“ (Wolf-Fabian Hungerland, eingereicht beim Wirtschaftsdienst). Der Beitrag gibt die persönliche Auffassung des Autors wieder.
 

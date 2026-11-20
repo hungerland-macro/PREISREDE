@@ -16,7 +16,7 @@ ich reiche für die Rubrik Analysen den Beitrag „Wann das Parlament über Prei
 
 Der Beitrag zählt Preis- und Inflationswörter in allen 4.608 Plenarprotokollen des Bundestages von 1949 bis 2025 und stellt die Reihe neben die Inflationsrate. Die Debatte läuft eng mit der Rate, seit 1990 ist das Preisthema vom Dauer- zum Schockthema geworden, und ab 1990 springt die Aufmerksamkeit erst oberhalb von rund 3,7 % an. Parlamentarische Anfragen zeigen ein anderes Bild als die Plenardebatte.
 
-Daten und Skripte liegen offen unter https://github.com/hungerland-macro/anfragen; gern hinterlege ich sie zusätzlich im Journal Data Archive.
+Daten und Skripte liegen offen unter https://github.com/hungerland-macro/PREISREDE; gern hinterlege ich sie zusätzlich im Journal Data Archive.
 
 Der Beitrag gibt meine persönliche Auffassung wieder. Die dienstliche Genehmigung liegt vor. Der Text ist unveröffentlicht und liegt keiner anderen Zeitschrift vor.
 
