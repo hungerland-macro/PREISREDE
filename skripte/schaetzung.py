@@ -164,3 +164,68 @@ if __name__ == "__main__":
     print(f"   Schwelle ab 1990: {t:.1f} %, oberhalb {o:.3f}, p (HAC) {ps:.3f}")
     f, p = bootstrap_schwelle(range(1990, 2026), Q, RATE)
     print(f"   Bootstrap: sup-F {f:.2f}, p = {p:.3f}")
+
+
+def spalte2_X(J, rate, bruch):
+    J = np.asarray(J)
+    pi = np.array([rate[j] for j in J])
+    dp = np.diff(pi)
+    auf, ab = np.where(dp > 0, dp, 0), np.where(dp < 0, dp, 0)
+    s = (J[1:] >= bruch).astype(float)
+    return np.column_stack([auf, ab, auf * s, ab * s, s]), np.column_stack([auf, ab])
+
+
+def bruchtest(reihe, rate, von=1975, bis=2005, n_boot=2000, seed=2):
+    """Sup-F über mögliche Bruchjahre in Spalte 2, p-Wert per Residuen-Bootstrap
+    unter dem Modell ohne Bruch."""
+    J = np.arange(1950, 2026)
+    d = np.diff(np.log([reihe[j] for j in J]))
+
+    def supf(y):
+        _, X0 = spalte2_X(J, rate, 1990)
+        ssr0 = sm.OLS(y, sm.add_constant(X0)).fit().ssr
+        best, jahr = 0.0, None
+        for b in range(von, bis + 1):
+            X1 = sm.add_constant(spalte2_X(J, rate, b)[0])
+            ssr1 = sm.OLS(y, X1).fit().ssr
+            f = ((ssr0 - ssr1) / 3) / (ssr1 / (len(y) - X1.shape[1]))
+            if f > best:
+                best, jahr = f, b
+        return best, jahr
+
+    f_obs, jahr = supf(d)
+    _, X0 = spalte2_X(J, rate, 1990)
+    m0 = sm.OLS(d, sm.add_constant(X0)).fit()
+    rng = np.random.default_rng(seed)
+    p = np.mean([supf(m0.fittedvalues + rng.choice(m0.resid, len(d)))[0] >= f_obs
+                 for _ in range(n_boot)])
+    return jahr, f_obs, p
+
+
+def ohne_je_ein_jahr(reihe, rate):
+    J = np.arange(1950, 2026)
+    d = np.diff(np.log([reihe[j] for j in J]))
+    X = sm.add_constant(spalte2_X(J, rate, 1990)[0])
+    werte = []
+    for i in range(len(d)):
+        k = np.arange(len(d)) != i
+        werte.append((sm.OLS(d[k], X[k]).fit().params[3], J[1:][i]))
+    return min(werte), max(werte)
+
+
+if __name__ == "__main__":
+    P0 = {int(r["jahr"]): float(r["preisniveau_je_mio_woerter"].replace(",", "."))
+          for r in lies("plenum_jahr.csv")}
+    lo, hi = ohne_je_ein_jahr(P0, RATE)
+    print(f"\nAnstieg ab 1990 ohne je ein Jahr: {lo[0]:.3f} (ohne {lo[1]}) bis {hi[0]:.3f} (ohne {hi[1]})")
+    jahr, f, p = bruchtest(P0, RATE)
+    print(f"Bruchtest 1975-2005: Bruchjahr {jahr}, sup-F {f:.2f}, p = {p:.3f}")
+    pl = {int(r["jahr"]): float(r["placebo_je_mio"]) for r in
+          csv.DictReader(open(os.path.join(DATEN, "validierung_jahr.csv"), encoding="utf-8"), delimiter=";")}
+    J = range(1950, 2026)
+    print(f"Placebo (Bundeswehr, Verteidigung) gegen Inflation: r = "
+          f"{np.corrcoef([pl[j] for j in J], [RATE[j] for j in J])[0, 1]:.2f}")
+    y = np.array([P0[j] for j in J]); pi = np.array([RATE[j] for j in J])
+    k = np.array([j not in (1970, 1971, 1972, 1973, 1974, 1975, 2022, 2023) for j in J])
+    print(f"Korrelation ohne 1970-75 und 2022-23: {np.corrcoef(y[k], pi[k])[0, 1]:.2f}; "
+          f"in Veränderungen: {np.corrcoef(np.diff(np.log(y)), np.diff(pi))[0, 1]:.2f}")

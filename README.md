@@ -12,7 +12,7 @@ Daten und Skripte zur Note „Wann das Parlament über Preise spricht“ (Wolf-F
 | `daten` | `inflation.csv` | Inflationsrate mit Quelle je Jahr, dazu der Index aller privaten Haushalte 1963 bis 1991 für die Robustheitsrechnung |
 | `skripte` | `plenum_worte.py` | Zählt die Wortfelder im Korpus CPP-BT |
 | `skripte` | `dip_anfragen.py` | Zieht die Anfragen über die DIP-Schnittstelle |
-| `skripte` | `schaetzung.py` | Tabellen 1 und 2, Robustheit, Bootstrap-p-Wert der Schwelle |
+| `skripte` | `schaetzung.py` | Tabellen 1 und 2, Robustheit, Bootstrap-Tests für Schwelle und Bruchjahr, Korrelationen, Placebo |
 | `skripte` | `validierung.py` | Prüft das Wortfeld auf dem Korpus: Neuzählung, Komposita, Stichprobe, Placebo |
 | `daten` | `validierung_*.csv` | Ergebnisse der Prüfung, Stichprobe mit Urteil (A Preisniveau, S sektoral, M übertragen) |
 | `skripte` | `abbildungen.py` | Abbildungen 1 bis 3 als PDF, PNG und SVG |
