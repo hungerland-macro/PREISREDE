@@ -105,3 +105,62 @@ if __name__ == "__main__":
         t, k, n, u, o, p = schwelle(range(von, bis + 1), RATE)
         print(f"   {von}-{bis}: {t:.1f} %, {k} von {n} Jahren ab Schwelle, "
               f"unterhalb {u:.3f}, oberhalb {o:.3f}, p Zusatzterm {p:.3f}")
+
+
+def sup_f(y, yl, pi, gitter, mind):
+    """F-Statistik je Schwelle gegen das lineare Modell; Maximum über das Gitter."""
+    X0 = sm.add_constant(np.column_stack([pi, yl]))
+    ssr0 = sm.OLS(y, X0).fit().ssr
+    beste = 0.0
+    for t in gitter:
+        oben = pi >= t - 1e-9
+        if oben.sum() < mind or len(y) - oben.sum() < mind:
+            continue
+        X1 = np.column_stack([X0, oben * (pi - t)])
+        ssr1 = sm.OLS(y, X1).fit().ssr
+        beste = max(beste, (ssr0 - ssr1) / (ssr1 / (len(y) - X1.shape[1])))
+    return beste
+
+
+def bootstrap_schwelle(J, reihe, rate, n_boot=2000, seed=1):
+    """p-Wert der Schwelle nach Hansen (1996): Residuen-Bootstrap unter dem
+    linearen Modell, Regressoren fest, sup-F über dasselbe Gitter."""
+    J = list(J)
+    y = np.log([reihe[j] for j in J])
+    yl = np.log([reihe[j - 1] for j in J])
+    pi = np.array([rate[j] for j in J])
+    gitter = np.round(np.arange(0.5, 7.01, 0.1), 1)
+    mind = int(0.15 * len(J))
+    f_obs = sup_f(y, yl, pi, gitter, mind)
+    X0 = sm.add_constant(np.column_stack([pi, yl]))
+    m0 = sm.OLS(y, X0).fit()
+    rng = np.random.default_rng(seed)
+    treffer = 0
+    for _ in range(n_boot):
+        yb = m0.fittedvalues + rng.choice(m0.resid, len(y), replace=True)
+        treffer += sup_f(yb, yl, pi, gitter, mind) >= f_obs
+    return f_obs, treffer / n_boot
+
+
+def ohne_mittelbar():
+    """Plenumsreihe ohne Inflationsausgleich... und Inflation Reduction Act."""
+    pfad = os.path.join(DATEN, "validierung_jahr.csv")
+    return {int(r["jahr"]): float(r["preisniveau_ohne_mittelbar_je_mio"])
+            for r in csv.DictReader(open(pfad, encoding="utf-8"), delimiter=";")}
+
+
+if __name__ == "__main__":
+    print("\nSchwelle 1990-2025, Bootstrap-p-Wert (Hansen 1996, 2000 Ziehungen)")
+    f, p = bootstrap_schwelle(range(1990, 2026), P, RATE)
+    print(f"   sup-F {f:.2f}, p = {p:.3f}")
+    Q = ohne_mittelbar()
+    print("\nReihe ohne Inflationsausgleich-Komposita")
+    print(f"   Spitzen: 1973 {Q[1973]:.0f}, 2022 {Q[2022]:.0f}, 2023 {Q[2023]:.0f}, 2025 {Q[2025]:.0f}")
+    P.clear(); P.update(Q)
+    m1, m2, _ = tabelle1(RATE)
+    zeile("Inflationsrate (Spalte 1)", m1, 1)
+    zeile("Anstieg, zusätzlich ab 1990 (Spalte 2)", m2, 3)
+    t, k, n, u, o, ps = schwelle(range(1990, 2026), RATE)
+    print(f"   Schwelle ab 1990: {t:.1f} %, oberhalb {o:.3f}, p (HAC) {ps:.3f}")
+    f, p = bootstrap_schwelle(range(1990, 2026), Q, RATE)
+    print(f"   Bootstrap: sup-F {f:.2f}, p = {p:.3f}")

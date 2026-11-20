@@ -12,9 +12,9 @@ Der Wirtschaftsdienst nimmt Beiträge nur über die Plattform an (journals.sub.u
 
 Sehr geehrte Damen und Herren,
 
-ich reiche für die Rubrik Analysen den Beitrag „Wann das Parlament über Preise spricht. Eine Aufmerksamkeitsreihe für den Bundestag, 1949 bis 2025“ ein, rund 20.600 Zeichen einschließlich Leerzeichen, mit drei Abbildungen und zwei Tabellen.
+ich reiche für die Rubrik Analysen den Beitrag „Wann das Parlament über Preise spricht. Eine Aufmerksamkeitsreihe für den Bundestag, 1949 bis 2025“ ein, rund 22.900 Zeichen einschließlich Leerzeichen, mit drei Abbildungen und zwei Tabellen.
 
-Der Beitrag zählt Preis- und Inflationswörter in allen 4.608 Plenarprotokollen des Bundestages von 1949 bis 2025 und stellt die Reihe neben die Inflationsrate. Die Debatte läuft eng mit der Rate, seit 1990 ist das Preisthema vom Dauer- zum Schockthema geworden, und ab 1990 springt die Aufmerksamkeit erst oberhalb von rund 3,7 % an. Parlamentarische Anfragen zeigen ein anderes Bild als die Plenardebatte.
+Der Beitrag zählt Preis- und Inflationswörter in allen 4.608 Plenarprotokollen des Bundestages von 1949 bis 2025 und stellt die Reihe neben die Inflationsrate. Die Debatte läuft eng mit der Rate, seit 1990 ist das Preisthema vom Dauer- zum Schockthema geworden, und ab 1990 springt die Aufmerksamkeit erst bei kräftigen Anstiegen an. Parlamentarische Anfragen zeigen ein anderes Bild als die Plenardebatte.
 
 Daten und Skripte liegen offen unter https://github.com/hungerland-macro/PREISREDE; gern hinterlege ich sie zusätzlich im Journal Data Archive.
 
