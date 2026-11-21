@@ -7,16 +7,18 @@ Erwartet im Ordner daten/zweitcodierung die Antworten als lauf1.csv, lauf2.csv, 
 Gibt je Lauf die Übereinstimmung mit der Erstcodierung und Cohens Kappa aus,
 dazu Fleiss' Kappa über alle Codierer und die Fälle mit Abweichung.
 
-Aufruf: python zweitcodierung_auswerten.py
+Aufruf: python zweitcodierung_auswerten.py [zweitcodierung | zweitcodierung_anfragen]
 """
 
 import csv
 import glob
 import os
+import sys
 from collections import Counter
 
-ORDNER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "daten", "zweitcodierung")
-KAT = ["A", "S", "M"]
+ORDNER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "daten",
+                      sys.argv[1] if len(sys.argv) > 1 else "zweitcodierung")
+KAT = ["A", "S", "M", "E", "N", "B", "F"]
 
 
 def lies(pfad):
@@ -67,4 +69,4 @@ if __name__ == "__main__":
     for n, i in enumerate(ids):
         werte = [a[n] for a in alle[1:]]
         if any(w != erst[n] for w in werte):
-            print(f"   {i} ({schl[i]['jahr']}): erst {erst[n]}, Läufe {' '.join(werte)}")
+            print(f"   {i} ({schl[i]['jahr']}{' ' + schl[i]['drucksache'] if 'drucksache' in schl[i] else ''}): erst {erst[n]}, Läufe {' '.join(werte)}")
