@@ -229,3 +229,19 @@ if __name__ == "__main__":
     k = np.array([j not in (1970, 1971, 1972, 1973, 1974, 1975, 2022, 2023) for j in J])
     print(f"Korrelation ohne 1970-75 und 2022-23: {np.corrcoef(y[k], pi[k])[0, 1]:.2f}; "
           f"in Veränderungen: {np.corrcoef(np.diff(np.log(y)), np.diff(pi))[0, 1]:.2f}")
+
+
+if __name__ == "__main__":
+    def spalte2(start, bruch, ohne=()):
+        J = np.arange(start, 2026)
+        X = sm.add_constant(spalte2_X(J, RATE, bruch)[0])
+        d = np.diff(np.log([P0[j] for j in J]))
+        k = ~np.isin(J[1:], ohne)
+        return hac(d[k], X[k][:, 1:])
+    print("\nSpalte 2 mit Bruch 1999")
+    zeile("Anstieg, zusätzlich ab 1999", spalte2(1950, 1999), 3)
+    zeile("dasselbe ohne 2022", spalte2(1950, 1999, (2022,)), 3)
+    print("Spalte 2 ab 1953 (ohne Währungsreformjahre)")
+    m = spalte2(1953, 1990)
+    zeile("Anstieg vor 1990", m, 1)
+    zeile("Anstieg, zusätzlich ab 1990", m, 3)
