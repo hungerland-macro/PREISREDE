@@ -11,9 +11,9 @@ Ziel: Die Einstufung der Treffer (A Preisniveau, S sektoraler Preis, M übertrag
 
 1. Neuen Chat öffnen, ohne Projekt, ohne Erinnerungen, am besten im anonymen oder temporären Modus.
 2. Den ganzen Inhalt von `prompt_zweitcodierung.md` einfügen und abschicken.
-3. Die Antwort (CSV-Codeblock) als `lauf1.csv` in diesen Ordner legen, beim nächsten Lauf `lauf2.csv` usw.
-4. Nach zwei oder drei Läufen: `python skripte/zweitcodierung_auswerten.py`.
+3. Die Antwort (CSV-Codeblock) als `lauf<n>_<modell>.csv` in diesen Ordner legen, etwa `lauf1_claude.csv`, `lauf2_claude.csv`, `lauf3_chatgpt.csv`.
+4. Geplant sind zwei Läufe mit Claude und mindestens einer mit einem anderen Modell (ChatGPT oder Gemini). Danach: `python skripte/zweitcodierung_auswerten.py`.
 
 ## Hinweis für den Text
 
-Läufe desselben Modells sind keine unabhängigen menschlichen Codierer. Sie zeigen, ob die Einstufung stabil ist, nicht ob ein Mensch genauso urteilen würde. Am stärksten ist ein Lauf mit einem anderen Modell oder einem Menschen.
+Läufe desselben Modells sind keine unabhängigen menschlichen Codierer. Sie zeigen, ob die Einstufung stabil ist, nicht ob ein Mensch genauso urteilen würde. Im Text werden die Läufe deshalb als Wiederholung durch Sprachmodelle ausgewiesen, getrennt nach Läufen desselben Modells und dem Vergleich mit einem anderen Modell. Am stärksten bliebe ein menschlicher Codierer.
