@@ -17,3 +17,7 @@ Ziel: Die Einstufung der Treffer (A Preisniveau, S sektoraler Preis, M übertrag
 ## Hinweis für den Text
 
 Läufe desselben Modells sind keine unabhängigen menschlichen Codierer. Sie zeigen, ob die Einstufung stabil ist, nicht ob ein Mensch genauso urteilen würde. Im Text werden die Läufe deshalb als Wiederholung durch Sprachmodelle ausgewiesen, getrennt nach Läufen desselben Modells und dem Vergleich mit einem anderen Modell. Am stärksten bliebe ein menschlicher Codierer.
+
+## Ergebnis (21.11.2026)
+
+Vier Läufe: ChatGPT, Gemini, DeepSeek, Claude Opus 5.5 (ein zweiter Claude-Lauf war identisch und zählt nicht gesondert). Übereinstimmung mit der Erstcodierung 94 %, 90 %, 88 %, 94 %; Cohens Kappa 0,89, 0,82, 0,78, 0,89; Fleiss' Kappa über alle fünf Codierungen 0,90. Bei T40, T41 und T46 urteilten alle vier Modelle anders als die Erstcodierung; dort gilt in `validierung_stichprobe.csv` jetzt ihr Urteil. Die Spalte `urteil_erstcodierung` in `schluessel.csv` zeigt weiter die ursprüngliche Einstufung. Nachrechnen: `python skripte/zweitcodierung_auswerten.py`.
