@@ -26,7 +26,8 @@ CM = 1 / 2.54
 FARBE = ["#002060", "#0070C0", "#00B0F0", "#51154A", "#7030A0", "#D86DCD", "#47D359"]
 GITTER, NULL = "#BFBFBF", "#FF0000"
 SCHRIFTEN = ["Arial Narrow", "Liberation Sans Narrow", "DejaVu Sans Condensed"]
-LETZTES_JAHR = 2025          # Korpus CPP-BT endet am 17.01.2026
+LETZTES_JAHR = 2025          # letztes volles Jahr; Korpus CPP-BT reicht bis 19.09.2026
+LAUFEND = (2026, 2.6)         # Januar bis September 2026: Jahr, VPI-Rate gegen Vorjahreszeitraum (Bundesbank BBDP1, Monatswerte)
 
 
 def schrift_waehlen():
@@ -48,11 +49,16 @@ def lies(name):
 
 
 def daten():
-    plenum = {int(r["jahr"]): zahl(r["preisniveau_je_mio_woerter"]) for r in lies("plenum_jahr.csv")
-              if int(r["jahr"]) <= LETZTES_JAHR}
+    alle = {int(r["jahr"]): zahl(r["preisniveau_je_mio_woerter"]) for r in lies("plenum_jahr.csv")}
+    plenum = {j: v for j, v in alle.items() if j <= LETZTES_JAHR}
+    global LAUFEND_PLENUM
+    LAUFEND_PLENUM = alle.get(LAUFEND[0])
     infl = {int(r["jahr"]): zahl(r["vpi_rate"]) for r in lies("inflation.csv")}
     anf = {int(r["jahr"]): r for r in lies("anfragen_jahr.csv") if int(r["jahr"]) <= LETZTES_JAHR}
     return plenum, infl, anf
+
+
+LAUFEND_PLENUM = None
 
 
 def fenster(jahre, zaehler, nenner, breite=5):
@@ -122,8 +128,16 @@ def abbildung1(plenum, infl, ziel, schrift, b=15.0, h=6.0, gr=8, lw=3.5):
                    solid_capstyle="round", label="Inflationsrate, Jahresdurchschnitt (rechts)")
     p2, = ax.plot(jahre, [plenum[j] for j in jahre], color=FARBE[2], lw=lw, zorder=2,
                   solid_capstyle="round", label="Preiswörter im Plenum (links)")
-    legende(ax, [p1, p2], gr)
-    fig.subplots_adjust(left=0.20, right=0.94, top=0.80, bottom=0.10)
+    if LAUFEND_PLENUM is not None:      # laufendes Jahr als Punkte, nicht verbunden
+        ax2.plot([LAUFEND[0]], [LAUFEND[1]], "o", color=FARBE[0], ms=4, zorder=5, mfc="white", mew=1.5)
+        ax.plot([LAUFEND[0]], [LAUFEND_PLENUM], "o", color=FARBE[2], ms=4, zorder=5, mfc="white", mew=1.5)
+        ax.set_xlim(1949, LAUFEND[0] + 0.6)
+        p3, = ax.plot([], [], "o", color="#7F7F7F", ms=4, mfc="white", mew=1.5,
+                      label="Kreise: 2026, Januar bis September")
+        legende(ax, [p1, p2, p3], gr)
+    else:
+        legende(ax, [p1, p2], gr)
+    fig.subplots_adjust(left=0.20, right=0.94, top=0.74, bottom=0.10)
     speichern(fig, ziel, "Abb1_Plenum_Inflation", schrift)
 
 
@@ -188,7 +202,8 @@ def datenmappe(plenum, infl, anf, ziel):
     wb = Workbook()
     blaetter = [
         ("Abb1", ["Jahr", "Preiswörter je Mio. Wörter", "Inflationsrate in %"],
-         [[j, plenum[j], infl.get(j)] for j in jahre]),
+         [[j, plenum[j], infl.get(j)] for j in jahre]
+         + [["2026, Jan.–Sep.", LAUFEND_PLENUM, LAUFEND[1]]]),
         ("Abb2", ["Jahr", "Preiswörter je Mio. Wörter", "Anfragen zu Preisniveau und Messung je 1000 Anfragen"],
          [[j, plenum[j], round(1000 * ms[j] / nenner[j], 2) if j in ja else None] for j in jahre]),
         ("Abb3", ["Jahr", "Anfragen zu einzelnen Preisen je 1000, Fünfjahresfenster",

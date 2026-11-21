@@ -1,4 +1,4 @@
-jahr;protokolle;woerter;treffer_preisniveau;treffer_messung;preisniveau_je_mio_woerter;messung_je_mio_woerter
+﻿jahr;protokolle;woerter;treffer_preisniveau;treffer_messung;preisniveau_je_mio_woerter;messung_je_mio_woerter
 1949;25;679830;28;2;41,2;2,9
 1950;83;2857384;176;19;61,6;6,6
 1951;74;3009645;158;19;52,5;6,3
@@ -75,5 +75,5 @@ jahr;protokolle;woerter;treffer_preisniveau;treffer_messung;preisniveau_je_mio_w
 2022;68;6325464;2355;21;372,3;3,3
 2023;68;6515208;1188;9;182,3;1,4
 2024;63;5764688;565;3;98,0;0,5
-2025;55;4395389;207;10;47,1;2,3
-2026;2;185466;8;0;43,1;0,0
+2025;57;4603119;217;10;47,1;2,2
+2026;43;3670269;183;4;49,9;1,1

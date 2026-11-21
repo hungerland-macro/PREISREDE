@@ -77,7 +77,10 @@ def main(zip_pfad):
             w.writerow([j, c["protokolle"], c["woerter"], c["niveau"], c["mittelbar"],
                         round((c["niveau"] - c["mittelbar"]) / mio, 1), round(c["placebo"] / mio, 1), diff])
 
-    with open(os.path.join(DATEN, "validierung_stichprobe.csv"), "w", newline="", encoding="utf-8") as f:
+    if "--ohne-stichprobe" in sys.argv:      # bewertete Stichprobe nicht überschreiben
+        kandidaten = {}
+    else:
+      with open(os.path.join(DATEN, "validierung_stichprobe.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f, delimiter=";")
         w.writerow(["jahrzehnt", "jahr", "protokoll", "treffer", "kontext", "urteil"])
         for d in sorted(kandidaten):

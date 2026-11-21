@@ -7,7 +7,7 @@ Misst, wie oft im Plenum des Bundestages ueber Preise geredet wurde, Jahr fuer
 Jahr von 1949 bis heute.
 
 Grundlage ist das Corpus der Plenarprotokolle des Deutschen Bundestages
-(CPP-BT) von Sean Fobbe, Lizenz CC0, 4.610 Protokolle als CSV in einem
+(CPP-BT) von Sean Fobbe, Fassung 2026-09-19, Lizenz CC0, 4.653 Protokolle als CSV in einem
 ZIP-Archiv (rund 830 MB, nicht Teil dieses Repos). Das Skript laedt das Archiv
 einmalig von Zenodo, liest es ohne Entpacken, zaehlt je Protokoll die Woerter
 und die Treffer zweier Wortfelder und schreibt zwei Tabellen.
@@ -20,7 +20,7 @@ ABHAENGIGKEIT: keine, nur die Standardbibliothek.
 
 AUFRUF:
     python plenum_worte.py --out ../daten
-    python plenum_worte.py --zip PFAD/CPP-BT_2026-01-17_DE_CSV_Plenarprotokolle_Gesamt.zip
+    python plenum_worte.py --zip PFAD/CPP-BT_2026-09-19_DE_CSV_Plenarprotokolle_Gesamt.zip
 """
 
 import argparse
@@ -33,8 +33,8 @@ import urllib.request
 import zipfile
 from collections import defaultdict
 
-ZENODO = "https://zenodo.org/records/18177196/files/"
-ARCHIV = "CPP-BT_2026-01-17_DE_CSV_Plenarprotokolle_Gesamt.zip"
+ZENODO = "https://zenodo.org/records/22844952/files/"
+ARCHIV = "CPP-BT_2026-09-19_DE_CSV_Plenarprotokolle_Gesamt.zip"
 QUELLE = ZENODO + ARCHIV + "?download=1"
 
 # Wortfelder. Gesucht wird im laufenden Text: nur Woerter, die das Preisniveau

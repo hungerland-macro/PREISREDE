@@ -9,7 +9,7 @@ lang: de
 
 ### Abstract
 
-Der Beitrag misst, wie oft der Bundestag über Preise und Inflation spricht: Er zählt Preiswörter je Million Wörter in allen 4.608 Plenarprotokollen von 1949 bis 2025. Die Reihe reagiert vor allem auf die beiden großen Inflationsschübe, die Gipfel 1973 und 2022 sind fast gleich hoch. Um 1990 hat sich die Form gewandelt: Aus einem Dauerthema wurde ein Schockthema, das erst bei kräftigen Anstiegen der Rate anspringt und nach 2022 rascher abebbte, als Studien zu Haushalten und Medien es beschreiben. Eine Schwelle um 3,7 % ist angedeutet, statistisch aber nicht gesichert. Kleine und Große Anfragen erfassen den ersten Ölpreisschock gar nicht; das Messinstrument entscheidet mit.
+Der Beitrag misst, wie oft der Bundestag über Preise und Inflation spricht: Er zählt Preiswörter je Million Wörter in allen 4.610 Plenarprotokollen von 1949 bis 2025. Die Reihe reagiert vor allem auf die beiden großen Inflationsschübe, die Gipfel 1973 und 2022 sind fast gleich hoch. Um 1990 hat sich die Form gewandelt: Aus einem Dauerthema wurde ein Schockthema, das erst bei kräftigen Anstiegen der Rate anspringt und nach 2022 rascher abebbte, als Studien zu Haushalten und Medien es beschreiben. Eine Schwelle um 3,7 % ist angedeutet, statistisch aber nicht gesichert. Kleine und Große Anfragen erfassen den ersten Ölpreisschock gar nicht; das Messinstrument entscheidet mit.
 
 JEL-Codes: E31, E58, D72
 
@@ -21,7 +21,7 @@ Dieser Beitrag schließt die Lücke für Deutschland. Er misst den Raum, den Pre
 
 ### Daten und Maß
 
-Grundlage sind die Plenarprotokolle aus dem Corpus der Plenarprotokolle des Deutschen Bundestages (CPP-BT) von Sean Fobbe (2026), Fassung vom 17. Januar 2026, veröffentlicht unter CC0. Der Korpus umfasst 4.610 Protokolle der 1. bis 21. Wahlperiode. Ausgewertet werden die vollen Jahre 1949 bis 2025 mit 4.608 Protokollen; die zwei Sitzungen vom Januar 2026 bleiben außen vor. Für jedes Protokoll zähle ich die Gesamtzahl der Wörter sowie die Treffer zweier Wortfelder und bilde daraus Jahreswerte je Million Wörter. Die Normierung ist nötig, denn der Umfang schwankt von 1,6 Mio. Wörtern 1961 bis 7,0 Mio. Wörtern 2011.
+Grundlage sind die Plenarprotokolle aus dem Corpus der Plenarprotokolle des Deutschen Bundestages (CPP-BT) von Sean Fobbe (2026), Fassung vom 19. September 2026, veröffentlicht unter CC0. Der Korpus umfasst 4.653 Protokolle der 1. bis 21. Wahlperiode. Die Schätzungen nutzen die vollen Jahre 1949 bis 2025 mit 4.610 Protokollen; die 43 Sitzungen von Januar bis September 2026 zeigt Abbildung 1 gesondert. Für jedes Protokoll zähle ich die Gesamtzahl der Wörter sowie die Treffer zweier Wortfelder und bilde daraus Jahreswerte je Million Wörter. Die Normierung ist nötig, denn der Umfang schwankt von 1,6 Mio. Wörtern 1961 bis 7,0 Mio. Wörtern 2011.
 
 Das erste Wortfeld erfasst das Preisniveau als Gesamtgröße: Inflation und ihre Zusammensetzungen, Deflation, Preisauftrieb, Preisniveau, Preisstabilität, Geldentwertung, Geldwertstabilität, Kaufkraftverlust und Lebenshaltungskosten. Das zweite Wortfeld erfasst die Messung: Preisindex, Verbraucherpreisindex, Preisstatistik, Warenkorb, Lebenshaltungsindex. Beide Felder sind bewusst eng gehalten. Einzelne Preise, etwa für Energie, Mieten oder Lebensmittel, bleiben außen vor, weil sie im Plenum ständig und in jedem Politikfeld vorkommen und das Maß unbrauchbar machen würden.
 
@@ -89,7 +89,7 @@ Quellen: Fobbe (2026); Statistisches Bundesamt; eigene Berechnungen.
 
 Der Wert liegt im Bereich der internationalen Schätzungen, statistisch gesichert ist er aber nicht: Ab der Schwelle liegen nur fünf Jahre, 1991 bis 1993 und 2022 bis 2023, bei 36 Beobachtungen insgesamt, und der Test, der die Suche über das Gitter einrechnet, verwirft das lineare Modell nicht. Der Befund ist ein Hinweis, der zu Haushalts- und Mediendaten passt, kein eigener Beleg.
 
-Abweichend von der Literatur: Korenok und Munro (2024) beschreiben, dass die Aufmerksamkeit nach dem Rückgang der Inflation zwei- bis dreimal so hoch bleibt wie vor dem Anstieg. Die EZB findet, dass die Aufmerksamkeit in den Nachrichten über dem Niveau vor dem Schock bleibt und Wahrnehmungen und Erwartungen etwas erhöht bleiben (Aarab et al., 2025). Im Bundestag ist davon wenig zu sehen: Nach dem Gipfel 2022 halbierte sich die Reihe binnen eines Jahres, ohne die Inflationsausgleichsprämie fiel sie sogar auf gut zwei Fünftel; 2025 liegt sie bei 47 und damit wieder nahe am Niveau der Jahre vor dem Schock. Nach 1973 dauerte dieselbe Halbierung zwei Jahre, allerdings fiel die Rate damals auch langsamer. Ob das Parlament schneller vergisst als Haushalte oder ob die Tagesordnung des Plenums von anderen Krisen beansprucht wird, lässt sich mit diesen Daten nicht entscheiden.
+Abweichend von der Literatur: Korenok und Munro (2024) beschreiben, dass die Aufmerksamkeit nach dem Rückgang der Inflation zwei- bis dreimal so hoch bleibt wie vor dem Anstieg. Die EZB findet, dass die Aufmerksamkeit in den Nachrichten über dem Niveau vor dem Schock bleibt und Wahrnehmungen und Erwartungen etwas erhöht bleiben (Aarab et al., 2025). Im Bundestag ist davon wenig zu sehen: Nach dem Gipfel 2022 halbierte sich die Reihe binnen eines Jahres, ohne die Inflationsausgleichsprämie fiel sie sogar auf gut zwei Fünftel; 2025 liegt sie bei 47, von Januar bis September 2026 bei 50, bei einer Rate von 2,6 %, und damit wieder nahe am Niveau der Jahre vor dem Schock. Nach 1973 dauerte dieselbe Halbierung zwei Jahre, allerdings fiel die Rate damals auch langsamer. Ob das Parlament schneller vergisst oder andere Krisen die Tagesordnung füllen, lässt sich hier nicht entscheiden.
 
 ### Befund 4: Anfragen erfassen den ersten Schub nicht
 
@@ -131,7 +131,7 @@ Barkhausen, D. & Teupe, S. (2025). The German inflation trauma: Weimar's policy 
 
 Bracha, A. & Tang, J. (2025). Inflation levels and (in)attention. *Review of Economic Studies*, *92*(3), 1564–1594. https://doi.org/10.1093/restud/rdae063
 
-Fobbe, S. (2026). *Corpus der Plenarprotokolle des Deutschen Bundestages (CPP-BT)* (Version 2026-01-17) [Datensatz]. Zenodo. https://doi.org/10.5281/zenodo.18177196
+Fobbe, S. (2026). *Corpus der Plenarprotokolle des Deutschen Bundestages (CPP-BT)* (Version 2026-09-19) [Datensatz]. Zenodo. https://doi.org/10.5281/zenodo.22844952
 
 Fraccaroli, N., Giovannini, A. & Jamet, J.-F. (2020). *Central banks in parliaments: A text analysis of the parliamentary hearings of the Bank of England, the European Central Bank and the Federal Reserve* (ECB Working Paper Nr. 2442). Europäische Zentralbank.
 
