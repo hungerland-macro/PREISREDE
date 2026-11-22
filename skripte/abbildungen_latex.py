@@ -102,6 +102,8 @@ def speichern(fig, name):
     os.makedirs(ZIEL, exist_ok=True)
     fig.savefig(os.path.join(ZIEL, name + ".pdf"), bbox_inches="tight", pad_inches=0.02)
     fig.savefig(os.path.join(ZIEL, name + ".png"), dpi=300, bbox_inches="tight", pad_inches=0.02)
+    with plt.rc_context({"svg.fonttype": "path"}):  # Schrift als Pfade: sieht überall gleich aus, auch ohne installierte Schrift
+        fig.savefig(os.path.join(ZIEL, name + ".svg"), bbox_inches="tight", pad_inches=0.02)
     plt.close(fig)
 
 
