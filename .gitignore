@@ -2,3 +2,9 @@
 korpus_preise/
 plenum/
 __pycache__/
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+*.toc

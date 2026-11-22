@@ -17,6 +17,8 @@ Daten und Skripte zur Note „Wann das Parlament über Preise spricht“ (Wolf-F
 | `skripte` | `alternativwoerter.py` | Zählt Preiswörter außerhalb des Wortfelds (Prüfung auf Wechsel des Vokabulars) |
 | `skripte` | `validierung.py` | Prüft das Wortfeld auf dem Korpus: Neuzählung, Komposita, Stichprobe, Placebo |
 | `daten` | `validierung_*.csv` | Ergebnisse der Prüfung, Stichprobe mit Urteil (A Preisniveau, S sektoral, M übertragen) |
+| `skripte` | `abbildungen_latex.py` | Abbildungen der LaTeX-Fassung (kleine Vielfache, TeX Gyre Heros Cn) |
+| `latex` | `preisrede.tex`, `preisrede.pdf` | Satzfassung in LaTeX (LuaLaTeX, TeX Gyre Pagella) |
 | `skripte` | `abbildungen.py` | Abbildungen 1 bis 3 als PDF, PNG und SVG |
 
 ## Quellen
