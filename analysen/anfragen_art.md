@@ -18,4 +18,4 @@ Stand 24.11.2026. Grundlage: alle 43.866 Anfragen im DIP (`daten/alle_anfragen.c
 
 ## Einordnung
 
-Die Große Anfrage mit Plenardebatte war in den 1950er-Jahren das Instrument für Preisfragen, und zwar für konkrete Preise (Brot, Kohle, Mieten), nicht für die Inflation insgesamt. Seit 1965 läuft die Preisfrage nur noch über Kleine Anfragen, also schriftlich und ohne Debatte. Auch in den Inflationsjahren 1973/74 und 2022 hat keine Fraktion eine Große Anfrage zur Preisentwicklung gestellt. Die Zahl der Treffer ist klein; der Befund beschreibt, er testet nichts.
+Die Große Anfrage mit Plenardebatte war in den 1950er-Jahren das Instrument für Preisfragen, und zwar für konkrete Preise (Kohle 1957, Lebensmittel 1959, Berufsverkehr 1964), nicht für die Inflation insgesamt. Seit 1965 läuft die Preisfrage nur noch über Kleine Anfragen, also schriftlich und ohne Debatte. Auch in den Inflationsjahren 1973/74 und 2022 hat keine Fraktion eine Große Anfrage zur Preisentwicklung gestellt. Die Zahl der Treffer ist klein; der Befund beschreibt, er testet nichts.
