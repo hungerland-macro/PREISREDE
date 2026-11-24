@@ -117,7 +117,7 @@ Drittens eine Erwartung für die nächsten Jahre. Der schnelle Rückbau nach 202
 
 ### Grenzen
 
-Das Maß zählt Wörter, nicht Positionen. Es unterscheidet nicht, ob jemand vor Inflation warnt oder sie für überschätzt hält, und es trennt Regierung und Opposition nicht. Die Rednerebene ließe sich über ein Korpus erschließen, das Fraktionen seit 1949 zuordnet; das steht aus. Die Wortfelder sind eine Setzung; die Stichprobe zeigt eine Trefferqualität von 89 %, Treffer, die das Wortfeld verfehlt, sind damit nicht erfasst. Die Einstufung der Stichprobe stammt von Sprachmodellen; eine menschliche Zweitcodierung steht aus. Beide Schübe kamen über die Energiepreise; ob die Reihe Aufmerksamkeit für das Preisniveau oder für Energie misst, trennt das Maß nicht. Die Protokolle der frühen Wahlperioden stammen aus der Texterkennung gescannter Vorlagen; Lesefehler sind möglich. Ein Vergleich mit anderen Parlamenten und eine Auswertung nach Fraktionen würden zeigen, ob der Wandel nach 1990 deutsch ist und wer ihn trägt. Schließlich bleibt die Zahl der Beobachtungen klein: 75 Jahre in den Schätzungen, davon fünf ab der geschätzten Schwelle. Daten und Skripte liegen offen unter https://github.com/hungerland-macro/PREISREDE.
+Das Maß zählt Wörter, nicht Positionen. Es unterscheidet nicht, ob jemand vor Inflation warnt oder sie für überschätzt hält. Eine Auswertung nach Fraktionen mit Open Discourse (Richter et al., 2023) zeigt: In den Schüben spricht die Opposition mehr über Preise als die Regierung, 1973 gut dreimal so viel, und der Rückgang nach 1990 trifft alle Fraktionen. Die Wortfelder sind eine Setzung; die Stichprobe zeigt eine Trefferqualität von 89 %, Treffer, die das Wortfeld verfehlt, sind damit nicht erfasst. Die Einstufung der Stichprobe stammt von Sprachmodellen; eine menschliche Zweitcodierung steht aus. Beide Schübe kamen über die Energiepreise; ob die Reihe Aufmerksamkeit für das Preisniveau oder für Energie misst, trennt das Maß nicht. Die Protokolle der frühen Wahlperioden stammen aus der Texterkennung gescannter Vorlagen; Lesefehler sind möglich. Ein Vergleich mit anderen Parlamenten würde zeigen, ob der Wandel nach 1990 deutsch ist. Schließlich bleibt die Zahl der Beobachtungen klein: 75 Jahre in den Schätzungen, davon fünf ab der geschätzten Schwelle. Daten und Skripte liegen offen unter https://github.com/hungerland-macro/PREISREDE.
 
 ### Hinweis zum Einsatz von KI
 
@@ -154,6 +154,8 @@ Pfäuti, O. (2024). *The inflation attention threshold and inflation surges* (ar
 Pfäuti, O. (2025). Inflation – who cares? Monetary policy in times of low attention. *Journal of Money, Credit and Banking*, *57*(5), 1211–1239. https://doi.org/10.1111/jmcb.13145
 
 Rancourt, M.-A., Déry, A., Fortier-Chouinard, A. & Dufresne, Y. (2025). Understanding politicians' discourse on inflation and cost of living in Canada. *Parliamentary Affairs*. https://doi.org/10.1093/pa/gsaf052
+
+Richter, F., Koch, P., Franke, O., Kraus, J., Kuruc, F., Thiem, A., Högerl, J., Heine, S. & Schöps, K. (2023). *Open Discourse* (Version 4) [Datensatz]. Harvard Dataverse. https://doi.org/10.7910/DVN/FIKIBO
 
 Statistisches Bundesamt. (2023). *Verbraucherpreisindizes für Deutschland. Lange Reihen ab 1948* (Ausgabe Dezember 2022).
 
