@@ -7,7 +7,9 @@ Zieht alle Kleinen und Grossen Anfragen des Bundestages ueber die DIP-Schnittste
 und baut daraus je Jahr den Nenner (alle Anfragen) und die Trefferliste
 (Titel mit Preis- oder Inflationswort, historisches Vokabular eingeschlossen).
 
-Ausgabe: index.csv (Treffer mit Titel und Drucksache), jahr.csv (Nenner je Jahr).
+Ausgabe: alle_anfragen.csv (jede Anfrage mit Datum, Art, Drucksache, Urheber, Titel und Treffer-Stichwort),
+index.csv (nur die Treffer), jahr.csv (Nenner je Jahr, getrennt nach Kleiner und Großer Anfrage).
+Mit --pdf zusätzlich die PDF-Dateien der Treffer und der Antworten der Bundesregierung.
 Die Treffer wurden danach von Hand codiert, siehe ../daten/anfragen_codierung.csv.
 
 ABHAENGIGKEIT: pip install requests
@@ -30,7 +32,7 @@ import requests
 API = "https://search.dip.bundestag.de/api/v1"
 PUBLIC_KEY = "R2BZaee.DjdCyihKZMf8AOjtScubP2EVydegzjmBIQ"
 PAUSE, TIMEOUT, MAX_SEITEN = 0.2, 60, 8000
-TYPEN = ["Kleine Anfrage", "Große Anfrage"]
+TYPEN = ["Kleine Anfrage", "Große Anfrage", "Anfrage", "Interpellation"]  # Anfrage und Interpellation: Bezeichnungen der 1. Wahlperiode
 KERN_FENSTER = 60
 
 CORE = ["inflation", "deflation", "disinflation", "stagflation", "inflationaer", "inflationär",
@@ -96,7 +98,7 @@ def main():
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     sess = requests.Session()
-    gesamt, zeilen = defaultdict(int), []
+    gesamt, zeilen, alle = defaultdict(int), [], []
     for typ in TYPEN:
         print(f"[.] {typ}")
         for d in seiten(sess, {"f.zuordnung": "BT", "f.drucksachetyp": typ}, a.apikey):
@@ -105,11 +107,19 @@ def main():
                 continue
             gesamt[(j, typ)] += 1
             kw, kern = treffer(d.get("titel"))
+            u0 = d.get("urheber")
+            u0 = "; ".join(x.get("titel", "") for x in u0) if isinstance(u0, list) else (u0 or "")
+            alle.append([d.get("datum", ""), typ, d.get("dokumentnummer", ""), u0, d.get("titel", ""), kw or "",
+                         (d.get("fundstelle") or {}).get("pdf_url", ""), ",".join(str(v["id"]) for v in (d.get("vorgangsbezug") or []))])
             if kw:
                 u = d.get("urheber")
                 u = "; ".join(x.get("titel", "") for x in u) if isinstance(u, list) else (u or "")
                 zeilen.append([d.get("datum", ""), "Frage", typ, d.get("dokumentnummer", ""),
                                u, d.get("titel", ""), kw, "ja" if kern else "nein"])
+    with open(os.path.join(a.out, "alle_anfragen.csv"), "w", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f, delimiter=";")
+        w.writerow(["datum", "drucksachetyp", "dokumentnummer", "urheber", "titel", "stichwort", "pdf_url", "vorgang_ids"])
+        w.writerows(sorted(alle))
     with open(os.path.join(a.out, "index.csv"), "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f, delimiter=";")
         w.writerow(["datum", "rolle", "drucksachetyp", "dokumentnummer", "urheber", "titel",

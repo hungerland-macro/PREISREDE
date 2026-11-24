@@ -8,7 +8,10 @@ Daten und Skripte zur Note „Wann das Parlament über Preise spricht“ (Wolf-F
 |---|---|---|
 | `daten` | `plenum_jahr.csv` | Protokolle, Wörter und Treffer der Wortfelder Preisniveau und Messung je Jahr, 1949 bis September 2026 |
 | `daten` | `plenum_protokolle.csv` | Wörter und Treffer je Protokoll |
-| `daten` | `anfragen_jahr.csv` | Kleine und Große Anfragen je Jahr (Nenner) und codierte Treffer nach Kategorie, 1952 bis 2026 |
+| `daten` | `alle_anfragen.csv` | alle Kleinen und Großen Anfragen seit 1949 aus DIP (in der 1. Wahlperiode „Anfrage“ und „Interpellation“), mit Titel, Drucksache, PDF-Adresse und Treffer-Stichwort |
+| `daten` | `anfragen_jahr.csv` | Anfragen je Jahr, gesamt und nach Kleiner und Großer Anfrage, dazu die codierten Treffer nach Kategorie, 1949 bis 2026 |
+| `daten` | `anfragen_dokumente.csv` | je Treffer die Adresse der Anfrage und, wo vorhanden, der Antwort der Bundesregierung |
+| `anfragen_pdf` | | PDF-Dateien der 78 Treffer und von 59 Antworten der Bundesregierung |
 | `daten` | `anfragen_codierung.csv` | Kategorie je Drucksache: M Preisniveau, S Messung, E einzelne Preise, N Nebenbezug, B Beschaffung des Bundes, F Fehltreffer |
 | `daten` | `inflation.csv` | Inflationsrate mit Quelle je Jahr, dazu der Index aller privaten Haushalte 1963 bis 1991 für die Robustheitsrechnung |
 | `skripte` | `plenum_worte.py` | Zählt die Wortfelder im Korpus CPP-BT |
