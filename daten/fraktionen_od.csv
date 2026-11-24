@@ -1,0 +1,595 @@
+jahr;gruppe;seite;reden;woerter;treffer_preisniveau
+1949;CDU/CSU;Regierung;117;66667;1
+1949;FDP;Regierung;61;41098;3
+1949;SPD;Opposition;106;92923;1
+1949;andere;Opposition;268;152116;8
+1949;andere;Regierung;35;27708;0
+1949;andere;ohne Zuordnung;5;2229;0
+1949;ohne Fraktion;Präsidium;836;110895;7
+1949;ohne Fraktion;Regierung;80;42635;2
+1949;ohne Fraktion;ohne Zuordnung;3;1965;0
+1950;CDU/CSU;Regierung;628;299838;13
+1950;FDP;Regierung;368;189901;14
+1950;SPD;Opposition;572;400429;28
+1950;andere;Opposition;1026;443803;26
+1950;andere;Regierung;211;102688;6
+1950;andere;ohne Zuordnung;10;2483;0
+1950;ohne Fraktion;Präsidium;4282;898247;31
+1950;ohne Fraktion;Regierung;356;280175;42
+1950;ohne Fraktion;ohne Zuordnung;4;2125;0
+1951;CDU/CSU;Regierung;713;323731;19
+1951;FDP;Regierung;427;196384;7
+1951;SPD;Opposition;746;489498;28
+1951;andere;Opposition;955;437653;43
+1951;andere;Regierung;205;103868;3
+1951;ohne Fraktion;Präsidium;4479;980636;45
+1951;ohne Fraktion;Regierung;321;247719;13
+1951;ohne Fraktion;ohne Zuordnung;7;5627;0
+1952;CDU/CSU;Regierung;564;379263;15
+1952;FDP;Regierung;355;193824;3
+1952;SPD;Opposition;640;502511;13
+1952;andere;Opposition;576;278453;14
+1952;andere;Regierung;171;100459;6
+1952;ohne Fraktion;Präsidium;3974;756074;26
+1952;ohne Fraktion;Regierung;573;256338;12
+1952;ohne Fraktion;ohne Zuordnung;7;3148;0
+1953;CDU/CSU;Regierung;530;256410;18
+1953;FDP;Regierung;304;133395;6
+1953;SPD;Opposition;563;332672;15
+1953;andere;Opposition;487;201625;21
+1953;andere;Regierung;143;77369;2
+1953;ohne Fraktion;Präsidium;3182;533894;13
+1953;ohne Fraktion;Regierung;477;183339;10
+1953;ohne Fraktion;ohne Zuordnung;5;2000;0
+1954;CDU/CSU;Regierung;747;383801;7
+1954;FDP;Regierung;299;204043;2
+1954;SPD;Opposition;935;527181;15
+1954;andere;Regierung;261;198232;4
+1954;ohne Fraktion;Präsidium;2825;495480;17
+1954;ohne Fraktion;Regierung;614;311452;16
+1954;ohne Fraktion;ohne Zuordnung;1;157;0
+1955;CDU/CSU;Regierung;719;384840;14
+1955;FDP;Regierung;294;188645;5
+1955;SPD;Opposition;1042;545262;15
+1955;andere;Opposition;35;33787;4
+1955;andere;Regierung;237;169705;8
+1955;andere;ohne Zuordnung;1;550;0
+1955;ohne Fraktion;Präsidium;2764;447281;12
+1955;ohne Fraktion;Regierung;660;285447;15
+1955;ohne Fraktion;ohne Zuordnung;3;3653;0
+1956;CDU/CSU;Regierung;1108;434291;23
+1956;FDP;Opposition;354;175116;13
+1956;FDP;Regierung;10;8525;0
+1956;SPD;Opposition;1305;588116;47
+1956;andere;Opposition;200;121507;7
+1956;andere;Regierung;218;120038;28
+1956;andere;ohne Zuordnung;1;2024;0
+1956;ohne Fraktion;Präsidium;3652;544741;29
+1956;ohne Fraktion;Regierung;849;342365;47
+1956;ohne Fraktion;ohne Zuordnung;7;3172;0
+1957;CDU/CSU;Regierung;995;395243;35
+1957;FDP;Opposition;370;195517;22
+1957;SPD;Opposition;1322;591067;77
+1957;andere;Opposition;137;77223;16
+1957;andere;Regierung;163;78299;16
+1957;ohne Fraktion;Präsidium;3300;496532;10
+1957;ohne Fraktion;Regierung;603;255115;31
+1957;ohne Fraktion;ohne Zuordnung;7;3776;0
+1958;CDU/CSU;Regierung;649;375201;29
+1958;FDP;Opposition;287;220681;7
+1958;SPD;Opposition;945;637646;50
+1958;andere;Regierung;136;119406;11
+1958;ohne Fraktion;Präsidium;1995;171013;0
+1958;ohne Fraktion;Regierung;691;359365;18
+1958;ohne Fraktion;ohne Zuordnung;1;517;0
+1959;CDU/CSU;Regierung;680;320001;27
+1959;FDP;Opposition;331;212530;11
+1959;SPD;Opposition;883;463592;39
+1959;andere;Regierung;100;56141;7
+1959;ohne Fraktion;Präsidium;2025;188322;3
+1959;ohne Fraktion;Regierung;576;264529;21
+1959;ohne Fraktion;ohne Zuordnung;5;2992;0
+1960;CDU/CSU;Regierung;947;392149;24
+1960;FDP;Opposition;461;240314;21
+1960;SPD;Opposition;1397;548864;38
+1960;andere;Opposition;8;367;0
+1960;andere;Regierung;93;70546;8
+1960;ohne Fraktion;Präsidium;3113;218987;2
+1960;ohne Fraktion;Regierung;1281;320941;23
+1960;ohne Fraktion;ohne Zuordnung;1;418;0
+1961;CDU/CSU;Regierung;867;334706;23
+1961;FDP;Opposition;468;183036;14
+1961;FDP;Regierung;20;17858;1
+1961;SPD;Opposition;1136;443397;38
+1961;andere;Opposition;9;3753;0
+1961;andere;ohne Zuordnung;3;3566;0
+1961;ohne Fraktion;Präsidium;2620;198347;1
+1961;ohne Fraktion;Regierung;1056;225312;15
+1961;ohne Fraktion;ohne Zuordnung;5;1092;0
+1962;CDU/CSU;Regierung;741;289652;27
+1962;FDP;Regierung;440;133479;15
+1962;SPD;Opposition;1684;499110;62
+1962;ohne Fraktion;Präsidium;3168;176927;4
+1962;ohne Fraktion;Regierung;2072;332777;47
+1962;ohne Fraktion;ohne Zuordnung;2;1445;0
+1963;CDU/CSU;Regierung;923;350926;57
+1963;FDP;Regierung;527;169868;9
+1963;SPD;Opposition;1595;491838;36
+1963;ohne Fraktion;Präsidium;3594;238805;7
+1963;ohne Fraktion;Regierung;2244;364975;23
+1963;ohne Fraktion;ohne Zuordnung;1;1029;0
+1964;CDU/CSU;Regierung;1264;412052;73
+1964;FDP;Regierung;687;234154;35
+1964;SPD;Opposition;2225;487214;108
+1964;ohne Fraktion;Präsidium;4649;267619;9
+1964;ohne Fraktion;Regierung;3344;442660;55
+1964;ohne Fraktion;ohne Zuordnung;3;2172;0
+1965;CDU/CSU;Regierung;1407;418679;98
+1965;FDP;Regierung;908;222280;26
+1965;SPD;Opposition;2719;505213;110
+1965;ohne Fraktion;Präsidium;5351;312516;5
+1965;ohne Fraktion;Regierung;3463;362533;32
+1966;CDU/CSU;Regierung;1507;495019;87
+1966;FDP;Opposition;298;83981;10
+1966;FDP;Regierung;614;206965;30
+1966;SPD;Opposition;2575;543950;148
+1966;SPD;Regierung;101;36502;6
+1966;ohne Fraktion;Präsidium;5781;298109;3
+1966;ohne Fraktion;Regierung;4071;532431;72
+1966;ohne Fraktion;ohne Zuordnung;12;512;0
+1967;CDU/CSU;Regierung;1839;478678;28
+1967;FDP;Opposition;2049;517117;60
+1967;SPD;Regierung;1649;394995;36
+1967;ohne Fraktion;Präsidium;6225;397346;10
+1967;ohne Fraktion;Regierung;2795;474626;42
+1968;CDU/CSU;Regierung;2024;498704;20
+1968;FDP;Opposition;2265;506611;32
+1968;SPD;Regierung;1706;436558;32
+1968;ohne Fraktion;Präsidium;6126;400766;9
+1968;ohne Fraktion;Regierung;1719;434849;57
+1968;ohne Fraktion;ohne Zuordnung;14;8669;0
+1969;CDU/CSU;Opposition;971;180223;19
+1969;CDU/CSU;Regierung;1515;391705;58
+1969;FDP;Opposition;1262;348694;30
+1969;FDP;Regierung;226;48493;7
+1969;SPD;Regierung;1691;450561;45
+1969;ohne Fraktion;Präsidium;4218;313552;10
+1969;ohne Fraktion;Regierung;1961;403771;66
+1969;ohne Fraktion;ohne Zuordnung;3;2435;0
+1970;CDU/CSU;Opposition;3524;934496;523
+1970;FDP;Regierung;577;238856;66
+1970;SPD;Regierung;1705;491292;166
+1970;ohne Fraktion;Präsidium;4715;335665;32
+1970;ohne Fraktion;Regierung;1550;410584;111
+1970;ohne Fraktion;ohne Zuordnung;4;3987;0
+1971;CDU/CSU;Opposition;3867;979639;554
+1971;FDP;Regierung;616;277837;91
+1971;SPD;Regierung;1986;546993;127
+1971;ohne Fraktion;Präsidium;5748;379015;16
+1971;ohne Fraktion;Regierung;1255;363225;60
+1971;ohne Fraktion;ohne Zuordnung;1;3221;0
+1972;CDU/CSU;Opposition;1905;549123;380
+1972;FDP;Regierung;265;154254;52
+1972;SPD;Regierung;820;252511;40
+1972;andere;ohne Zuordnung;1;59;0
+1972;ohne Fraktion;Präsidium;3045;206760;26
+1972;ohne Fraktion;Regierung;1132;272400;60
+1972;ohne Fraktion;ohne Zuordnung;6;5274;5
+1973;CDU/CSU;Opposition;3280;770259;697
+1973;FDP;Regierung;635;299340;131
+1973;SPD;Regierung;1688;465289;130
+1973;ohne Fraktion;Präsidium;5496;263755;30
+1973;ohne Fraktion;Regierung;4120;643169;109
+1973;ohne Fraktion;ohne Zuordnung;6;2845;0
+1974;CDU/CSU;Opposition;3566;932611;648
+1974;FDP;Regierung;694;364705;183
+1974;SPD;Regierung;1732;553275;151
+1974;ohne Fraktion;Präsidium;4940;293385;42
+1974;ohne Fraktion;Regierung;3947;707395;188
+1974;ohne Fraktion;ohne Zuordnung;277;25849;1
+1975;CDU/CSU;Opposition;3631;837529;279
+1975;FDP;Regierung;496;294825;85
+1975;SPD;Regierung;1652;503115;75
+1975;ohne Fraktion;Präsidium;5290;329575;23
+1975;ohne Fraktion;Regierung;3919;617084;144
+1975;ohne Fraktion;ohne Zuordnung;965;84807;0
+1976;CDU/CSU;Opposition;2641;771964;231
+1976;FDP;Regierung;531;305482;68
+1976;SPD;Regierung;1266;495193;70
+1976;andere;ohne Zuordnung;4;751;0
+1976;ohne Fraktion;Präsidium;3291;212854;7
+1976;ohne Fraktion;Regierung;2451;529599;83
+1976;ohne Fraktion;ohne Zuordnung;523;52555;0
+1977;CDU/CSU;Opposition;3016;781096;184
+1977;FDP;Regierung;507;331136;37
+1977;SPD;Regierung;1552;503166;52
+1977;ohne Fraktion;Präsidium;5542;306013;13
+1977;ohne Fraktion;Regierung;2550;471233;70
+1977;ohne Fraktion;ohne Zuordnung;967;49307;1
+1978;CDU/CSU;Opposition;3177;823142;121
+1978;FDP;Regierung;506;316005;30
+1978;SPD;Regierung;1738;539115;66
+1978;andere;ohne Zuordnung;3;3122;0
+1978;ohne Fraktion;Präsidium;6204;310677;7
+1978;ohne Fraktion;Regierung;2761;517979;89
+1978;ohne Fraktion;ohne Zuordnung;1084;74393;0
+1979;CDU/CSU;Opposition;3041;920233;152
+1979;FDP;Regierung;630;431320;30
+1979;SPD;Regierung;1703;648549;43
+1979;andere;ohne Zuordnung;16;9068;0
+1979;ohne Fraktion;Präsidium;6072;361243;24
+1979;ohne Fraktion;Regierung;2663;567690;89
+1979;ohne Fraktion;ohne Zuordnung;787;49310;0
+1980;CDU/CSU;Opposition;1717;554777;82
+1980;FDP;Regierung;401;271149;15
+1980;SPD;Regierung;1001;414655;40
+1980;andere;ohne Zuordnung;16;9079;0
+1980;ohne Fraktion;Präsidium;3670;249080;9
+1980;ohne Fraktion;Regierung;1609;380991;48
+1980;ohne Fraktion;ohne Zuordnung;585;37889;0
+1981;CDU/CSU;Opposition;2582;712651;102
+1981;FDP;Regierung;547;332410;30
+1981;SPD;Regierung;1840;525955;36
+1981;ohne Fraktion;Präsidium;5668;278336;19
+1981;ohne Fraktion;Regierung;3023;513666;73
+1981;ohne Fraktion;ohne Zuordnung;638;39840;0
+1982;CDU/CSU;Opposition;1720;525314;73
+1982;CDU/CSU;Regierung;530;216244;20
+1982;FDP;Opposition;31;9041;0
+1982;FDP;Regierung;677;381422;20
+1982;SPD;Opposition;1109;330557;27
+1982;SPD;Regierung;1269;399076;29
+1982;andere;ohne Zuordnung;60;25887;2
+1982;ohne Fraktion;Präsidium;6034;277130;7
+1982;ohne Fraktion;Regierung;3072;611116;70
+1982;ohne Fraktion;ohne Zuordnung;504;43399;0
+1983;CDU/CSU;Regierung;902;384540;63
+1983;FDP;Regierung;448;214925;9
+1983;Grüne;Opposition;662;238152;5
+1983;SPD;Opposition;1762;541322;35
+1983;andere;ohne Zuordnung;4;1394;1
+1983;ohne Fraktion;Präsidium;4206;192740;4
+1983;ohne Fraktion;Regierung;2041;421536;34
+1983;ohne Fraktion;ohne Zuordnung;290;30643;0
+1984;CDU/CSU;Regierung;1487;616842;162
+1984;FDP;Regierung;562;340392;45
+1984;Grüne;Opposition;881;344455;20
+1984;SPD;Opposition;3040;813703;83
+1984;andere;ohne Zuordnung;18;10233;1
+1984;ohne Fraktion;Präsidium;6782;287011;9
+1984;ohne Fraktion;Regierung;3502;602515;161
+1984;ohne Fraktion;ohne Zuordnung;386;51079;1
+1985;CDU/CSU;Regierung;1851;700857;170
+1985;FDP;Regierung;864;379520;34
+1985;Grüne;Opposition;1359;371687;30
+1985;SPD;Opposition;3464;891401;80
+1985;andere;ohne Zuordnung;7;6195;0
+1985;ohne Fraktion;Präsidium;8326;364898;17
+1985;ohne Fraktion;Regierung;3700;643270;177
+1985;ohne Fraktion;ohne Zuordnung;687;73286;0
+1986;CDU/CSU;Regierung;1726;665449;172
+1986;FDP;Regierung;818;358484;46
+1986;Grüne;Opposition;1067;340025;35
+1986;SPD;Opposition;3029;842221;82
+1986;andere;ohne Zuordnung;13;7608;0
+1986;ohne Fraktion;Präsidium;7360;362650;6
+1986;ohne Fraktion;Regierung;3234;583118;193
+1986;ohne Fraktion;ohne Zuordnung;393;46946;0
+1987;CDU/CSU;Regierung;986;449404;52
+1987;FDP;Regierung;582;250659;25
+1987;Grüne;Opposition;864;282704;7
+1987;SPD;Opposition;1833;591818;22
+1987;ohne Fraktion;Präsidium;4649;239359;2
+1987;ohne Fraktion;Regierung;1874;440255;70
+1987;ohne Fraktion;ohne Zuordnung;227;26866;0
+1988;CDU/CSU;Regierung;1518;665239;58
+1988;FDP;Regierung;959;363215;28
+1988;Grüne;Opposition;1325;391506;6
+1988;SPD;Opposition;2673;846774;36
+1988;andere;ohne Zuordnung;90;27876;2
+1988;ohne Fraktion;Präsidium;6976;291766;5
+1988;ohne Fraktion;Regierung;3052;542478;63
+1988;ohne Fraktion;ohne Zuordnung;226;31838;0
+1989;CDU/CSU;Regierung;1734;766799;67
+1989;FDP;Regierung;1061;440276;29
+1989;Grüne;Opposition;1225;436811;8
+1989;SPD;Opposition;2795;1007520;34
+1989;andere;ohne Zuordnung;153;42136;0
+1989;ohne Fraktion;Präsidium;7251;342722;1
+1989;ohne Fraktion;Regierung;2631;616636;30
+1989;ohne Fraktion;ohne Zuordnung;396;55194;2
+1990;CDU/CSU;Regierung;1198;522203;16
+1990;FDP;Regierung;799;315352;11
+1990;Grüne;Opposition;859;330984;9
+1990;Linke/PDS;Opposition;168;39567;2
+1990;SPD;Opposition;1924;681308;24
+1990;andere;ohne Zuordnung;166;58314;3
+1990;ohne Fraktion;Präsidium;5337;355909;7
+1990;ohne Fraktion;Regierung;1849;421312;19
+1990;ohne Fraktion;ohne Zuordnung;292;44890;2
+1991;CDU/CSU;Regierung;1659;775613;44
+1991;FDP;Regierung;967;408807;38
+1991;Grüne;Opposition;396;192776;17
+1991;Linke/PDS;Opposition;564;244916;17
+1991;SPD;Opposition;2724;937250;53
+1991;andere;ohne Zuordnung;40;11902;2
+1991;ohne Fraktion;Präsidium;6551;302183;2
+1991;ohne Fraktion;Regierung;2171;614654;55
+1991;ohne Fraktion;ohne Zuordnung;312;41692;1
+1992;CDU/CSU;Regierung;1602;733643;38
+1992;FDP;Regierung;892;381750;25
+1992;Grüne;Opposition;292;162868;11
+1992;Linke/PDS;Opposition;482;238145;14
+1992;SPD;Opposition;2563;859521;51
+1992;andere;ohne Zuordnung;108;44446;6
+1992;ohne Fraktion;Präsidium;6130;372062;2
+1992;ohne Fraktion;Regierung;2111;547263;34
+1992;ohne Fraktion;ohne Zuordnung;202;33070;0
+1993;CDU/CSU;Regierung;2092;835325;31
+1993;FDP;Regierung;1213;430714;18
+1993;Grüne;Opposition;427;187796;7
+1993;Linke/PDS;Opposition;621;284014;16
+1993;SPD;Opposition;2921;949004;47
+1993;andere;ohne Zuordnung;207;70054;15
+1993;ohne Fraktion;Präsidium;7266;391245;1
+1993;ohne Fraktion;Regierung;2314;584609;28
+1993;ohne Fraktion;ohne Zuordnung;290;42190;0
+1994;CDU/CSU;Regierung;1417;601626;36
+1994;FDP;Regierung;919;331526;9
+1994;Grüne;Opposition;362;154813;6
+1994;Linke/PDS;Opposition;415;210130;13
+1994;SPD;Opposition;1979;688032;25
+1994;andere;ohne Zuordnung;163;55537;0
+1994;ohne Fraktion;Präsidium;5140;378529;10
+1994;ohne Fraktion;Regierung;1547;441929;29
+1994;ohne Fraktion;ohne Zuordnung;163;29134;0
+1995;CDU/CSU;Regierung;2048;777893;64
+1995;FDP;Regierung;978;359948;11
+1995;Grüne;Opposition;1059;380059;7
+1995;Linke/PDS;Opposition;675;275361;19
+1995;SPD;Opposition;2828;955194;35
+1995;ohne Fraktion;Präsidium;7213;428748;4
+1995;ohne Fraktion;Regierung;2272;592610;36
+1995;ohne Fraktion;ohne Zuordnung;287;41279;0
+1996;CDU/CSU;Regierung;1929;775219;63
+1996;FDP;Regierung;946;364538;25
+1996;Grüne;Opposition;1218;411018;11
+1996;Linke/PDS;Opposition;636;270130;16
+1996;SPD;Opposition;2780;939018;26
+1996;ohne Fraktion;Präsidium;7441;455100;7
+1996;ohne Fraktion;Regierung;2200;546745;66
+1996;ohne Fraktion;ohne Zuordnung;369;47012;0
+1997;CDU/CSU;Regierung;1477;706830;39
+1997;FDP;Regierung;744;318201;19
+1997;Grüne;Opposition;853;360989;11
+1997;Linke/PDS;Opposition;593;260354;12
+1997;SPD;Opposition;2240;852692;26
+1997;ohne Fraktion;Präsidium;5876;410096;15
+1997;ohne Fraktion;Regierung;1729;527826;28
+1997;ohne Fraktion;ohne Zuordnung;242;25850;0
+1998;CDU/CSU;Opposition;373;128214;38
+1998;CDU/CSU;Regierung;825;422842;39
+1998;FDP;Opposition;147;52269;16
+1998;FDP;Regierung;390;194878;13
+1998;Grüne;Opposition;389;201311;4
+1998;Grüne;Regierung;105;55596;3
+1998;Linke/PDS;Opposition;452;202918;20
+1998;SPD;Opposition;1269;503588;38
+1998;SPD;Regierung;179;90802;3
+1998;andere;ohne Zuordnung;17;3291;1
+1998;ohne Fraktion;Präsidium;4267;395496;14
+1998;ohne Fraktion;Regierung;1319;449506;68
+1998;ohne Fraktion;ohne Zuordnung;146;27573;0
+1999;CDU/CSU;Opposition;2428;950130;85
+1999;FDP;Opposition;1068;376346;17
+1999;Grüne;Regierung;848;445342;38
+1999;Linke/PDS;Opposition;711;302869;19
+1999;SPD;Regierung;1476;747560;60
+1999;ohne Fraktion;Präsidium;6507;395287;11
+1999;ohne Fraktion;Regierung;1884;561310;78
+1999;ohne Fraktion;ohne Zuordnung;235;66978;0
+2000;CDU/CSU;Opposition;2215;960109;115
+2000;FDP;Opposition;933;369851;22
+2000;Grüne;Regierung;697;440636;25
+2000;Linke/PDS;Opposition;666;307497;18
+2000;SPD;Regierung;1301;775485;55
+2000;ohne Fraktion;Präsidium;6151;323869;10
+2000;ohne Fraktion;Regierung;1814;527847;53
+2000;ohne Fraktion;ohne Zuordnung;325;58236;1
+2001;CDU/CSU;Opposition;2212;968368;231
+2001;FDP;Opposition;904;377662;44
+2001;Grüne;Regierung;668;403134;41
+2001;Linke/PDS;Opposition;645;296357;23
+2001;SPD;Regierung;1250;740958;67
+2001;ohne Fraktion;Präsidium;6095;406148;7
+2001;ohne Fraktion;Regierung;1785;490256;29
+2001;ohne Fraktion;ohne Zuordnung;296;35551;0
+2002;CDU/CSU;Opposition;1801;860393;35
+2002;FDP;Opposition;615;304061;8
+2002;Grüne;Regierung;544;333025;4
+2002;Linke/PDS;Opposition;430;177375;6
+2002;SPD;Regierung;1072;665030;12
+2002;andere;ohne Zuordnung;46;18948;2
+2002;ohne Fraktion;Präsidium;4805;386557;1
+2002;ohne Fraktion;Regierung;1261;407876;13
+2002;ohne Fraktion;ohne Zuordnung;226;44601;1
+2003;CDU/CSU;Opposition;2467;1098215;58
+2003;FDP;Opposition;783;337832;5
+2003;Grüne;Regierung;640;362807;4
+2003;SPD;Regierung;1151;719473;32
+2003;andere;ohne Zuordnung;197;59326;2
+2003;ohne Fraktion;Präsidium;5585;350111;2
+2003;ohne Fraktion;Regierung;1721;528645;19
+2003;ohne Fraktion;ohne Zuordnung;287;42124;6
+2004;CDU/CSU;Opposition;2594;1129701;24
+2004;FDP;Opposition;1011;367147;9
+2004;Grüne;Regierung;773;385631;4
+2004;SPD;Regierung;1417;788868;29
+2004;andere;ohne Zuordnung;278;66122;3
+2004;ohne Fraktion;Präsidium;6150;373303;2
+2004;ohne Fraktion;Regierung;1684;498887;8
+2004;ohne Fraktion;ohne Zuordnung;338;49059;0
+2005;CDU/CSU;Opposition;1332;569496;39
+2005;CDU/CSU;Regierung;87;73760;0
+2005;FDP;Opposition;514;226930;8
+2005;Grüne;Opposition;82;40476;0
+2005;Grüne;Regierung;389;199372;8
+2005;Linke/PDS;Opposition;91;40225;1
+2005;SPD;Regierung;788;457912;22
+2005;andere;ohne Zuordnung;127;32680;0
+2005;ohne Fraktion;Präsidium;3620;241457;2
+2005;ohne Fraktion;Regierung;1035;335766;10
+2005;ohne Fraktion;ohne Zuordnung;189;26194;0
+2006;CDU/CSU;Regierung;1403;819428;27
+2006;FDP;Opposition;1167;492294;20
+2006;Grüne;Opposition;1228;447890;7
+2006;Linke/PDS;Opposition;1124;408067;18
+2006;SPD;Regierung;1348;781766;20
+2006;andere;ohne Zuordnung;9;4535;0
+2006;ohne Fraktion;Präsidium;6265;361409;0
+2006;ohne Fraktion;Regierung;1457;466230;15
+2006;ohne Fraktion;ohne Zuordnung;247;44667;0
+2007;CDU/CSU;Regierung;1405;736424;16
+2007;FDP;Opposition;960;428488;19
+2007;Grüne;Opposition;1243;411329;13
+2007;Linke/PDS;Opposition;1087;387578;38
+2007;SPD;Regierung;1219;723713;20
+2007;andere;ohne Zuordnung;26;11072;1
+2007;ohne Fraktion;Präsidium;5975;361913;1
+2007;ohne Fraktion;Regierung;1428;419734;8
+2007;ohne Fraktion;ohne Zuordnung;203;32513;1
+2008;CDU/CSU;Regierung;1501;846162;43
+2008;FDP;Opposition;1142;514166;36
+2008;Grüne;Opposition;1344;482238;19
+2008;Linke/PDS;Opposition;1152;454197;41
+2008;SPD;Regierung;1396;815763;17
+2008;andere;ohne Zuordnung;35;14815;0
+2008;ohne Fraktion;Präsidium;6219;371645;1
+2008;ohne Fraktion;Regierung;1588;438499;19
+2008;ohne Fraktion;ohne Zuordnung;174;32993;0
+2009;CDU/CSU;Regierung;1286;749345;27
+2009;FDP;Opposition;653;345863;15
+2009;FDP;Regierung;134;70136;0
+2009;Grüne;Opposition;1066;409210;2
+2009;Linke/PDS;Opposition;921;396014;18
+2009;SPD;Opposition;247;130599;2
+2009;SPD;Regierung;884;548376;4
+2009;andere;ohne Zuordnung;26;8780;0
+2009;ohne Fraktion;Präsidium;4623;373516;2
+2009;ohne Fraktion;Regierung;1127;335953;12
+2009;ohne Fraktion;ohne Zuordnung;146;19210;0
+2010;CDU/CSU;Regierung;2134;1141407;33
+2010;FDP;Regierung;1177;549654;12
+2010;Grüne;Opposition;1484;527128;1
+2010;Linke/PDS;Opposition;1133;499816;17
+2010;SPD;Opposition;1960;948408;15
+2010;ohne Fraktion;Präsidium;7251;416426;1
+2010;ohne Fraktion;Regierung;1701;462675;17
+2010;ohne Fraktion;ohne Zuordnung;128;25203;0
+2011;CDU/CSU;Regierung;2194;1237239;65
+2011;FDP;Regierung;1185;591840;46
+2011;Grüne;Opposition;1489;566066;18
+2011;Linke/PDS;Opposition;1284;560127;23
+2011;SPD;Opposition;2015;955651;32
+2011;ohne Fraktion;Präsidium;7552;424787;1
+2011;ohne Fraktion;Regierung;1838;425112;25
+2011;ohne Fraktion;ohne Zuordnung;252;41893;0
+2012;CDU/CSU;Regierung;2015;1234824;44
+2012;FDP;Regierung;1174;602392;67
+2012;Grüne;Opposition;1376;556840;25
+2012;Linke/PDS;Opposition;1253;572991;20
+2012;SPD;Opposition;1919;968736;21
+2012;ohne Fraktion;Präsidium;6789;405095;0
+2012;ohne Fraktion;Regierung;1588;394970;24
+2012;ohne Fraktion;ohne Zuordnung;155;30052;1
+2013;CDU/CSU;Regierung;1546;966280;31
+2013;FDP;Regierung;826;459196;20
+2013;Grüne;Opposition;1137;463883;9
+2013;Linke/PDS;Opposition;932;467720;13
+2013;SPD;Opposition;1322;711553;12
+2013;SPD;Regierung;25;11746;0
+2013;andere;ohne Zuordnung;2;1338;0
+2013;ohne Fraktion;Präsidium;4821;401316;5
+2013;ohne Fraktion;Regierung;1087;269424;10
+2013;ohne Fraktion;ohne Zuordnung;136;23837;0
+2014;CDU/CSU;Regierung;2169;1312567;27
+2014;Grüne;Opposition;1727;603371;15
+2014;Linke/PDS;Opposition;1376;557107;25
+2014;SPD;Regierung;1517;895969;23
+2014;ohne Fraktion;Präsidium;6948;386120;1
+2014;ohne Fraktion;Regierung;1433;460483;12
+2014;ohne Fraktion;ohne Zuordnung;255;51348;0
+2015;CDU/CSU;Regierung;1966;1202494;50
+2015;Grüne;Opposition;1792;604343;16
+2015;Linke/PDS;Opposition;1215;519395;19
+2015;SPD;Regierung;1382;831907;26
+2015;ohne Fraktion;Präsidium;6781;385198;0
+2015;ohne Fraktion;Regierung;1579;432477;12
+2015;ohne Fraktion;ohne Zuordnung;140;25066;0
+2016;CDU/CSU;Regierung;1883;1103295;21
+2016;Grüne;Opposition;1571;531380;3
+2016;Linke/PDS;Opposition;1155;473750;10
+2016;SPD;Regierung;1332;744785;11
+2016;ohne Fraktion;Präsidium;6322;366322;0
+2016;ohne Fraktion;Regierung;1280;343982;3
+2016;ohne Fraktion;ohne Zuordnung;254;44850;1
+2017;AfD;Opposition;96;27316;0
+2017;CDU/CSU;Regierung;1197;681708;5
+2017;FDP;Opposition;71;23864;0
+2017;Grüne;Opposition;934;335448;3
+2017;Linke/PDS;Opposition;721;296056;3
+2017;SPD;Regierung;786;436682;6
+2017;andere;ohne Zuordnung;3;1112;0
+2017;ohne Fraktion;Präsidium;4114;312672;0
+2017;ohne Fraktion;Regierung;789;225256;2
+2017;ohne Fraktion;ohne Zuordnung;116;28013;0
+2018;AfD;Opposition;1345;478783;38
+2018;CDU/CSU;Regierung;2230;1029514;28
+2018;FDP;Opposition;1024;412169;11
+2018;Grüne;Opposition;1081;413470;10
+2018;Linke/PDS;Opposition;925;377514;22
+2018;SPD;Regierung;1414;660151;25
+2018;andere;ohne Zuordnung;80;30845;5
+2018;ohne Fraktion;Präsidium;7811;168133;1
+2018;ohne Fraktion;Regierung;883;327279;4
+2018;ohne Fraktion;ohne Zuordnung;35;23001;0
+2019;AfD;Opposition;1244;517962;34
+2019;CDU/CSU;Regierung;2119;1049564;22
+2019;FDP;Opposition;1088;435241;11
+2019;Grüne;Opposition;1057;413320;6
+2019;Linke/PDS;Opposition;913;374431;16
+2019;SPD;Regierung;1494;709679;10
+2019;andere;ohne Zuordnung;47;17456;1
+2019;ohne Fraktion;Präsidium;7836;163492;0
+2019;ohne Fraktion;Regierung;1065;309253;9
+2019;ohne Fraktion;ohne Zuordnung;49;28351;0
+2020;AfD;Opposition;1207;480014;21
+2020;CDU/CSU;Regierung;2420;1118136;25
+2020;FDP;Opposition;1147;427660;15
+2020;Grüne;Opposition;1111;403343;17
+2020;Linke/PDS;Opposition;1012;379403;13
+2020;SPD;Regierung;1558;697321;12
+2020;ohne Fraktion;Präsidium;8407;148149;1
+2020;ohne Fraktion;Regierung;1057;335039;1
+2020;ohne Fraktion;ohne Zuordnung;93;42474;1
+2021;AfD;Opposition;852;339622;29
+2021;CDU/CSU;Opposition;53;29464;26
+2021;CDU/CSU;Regierung;1554;688435;5
+2021;FDP;Opposition;791;271872;9
+2021;FDP;Regierung;25;14150;2
+2021;Grüne;Opposition;778;263293;1
+2021;Grüne;Regierung;28;16301;11
+2021;Linke/PDS;Opposition;721;251399;5
+2021;SPD;Regierung;1088;488974;28
+2021;ohne Fraktion;Präsidium;5492;84785;0
+2021;ohne Fraktion;Regierung;652;200963;2
+2021;ohne Fraktion;ohne Zuordnung;71;43698;1
+2022;AfD;Opposition;544;184881;175
+2022;CDU/CSU;Opposition;1080;424788;208
+2022;FDP;Regierung;492;194025;58
+2022;Grüne;Regierung;557;220400;58
+2022;Linke/PDS;Opposition;350;115012;49
+2022;SPD;Regierung;808;378904;64
+2022;ohne Fraktion;Präsidium;3557;52682;0
+2022;ohne Fraktion;Regierung;443;150307;26
+2022;ohne Fraktion;ohne Zuordnung;61;23491;3
