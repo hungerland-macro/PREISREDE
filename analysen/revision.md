@@ -47,3 +47,12 @@ Gemessen an Arbeitslosigkeit, Haushalt und Wachstum bleibt der Niveaubruch gesic
 - 1969 erreichten Aufwertung und Wechselkurs 259 Treffer je Million Wörter, vor dem Sprung der Preisrede 1970.
 - Schwelle: zum Absatz herabgestuft (Mindestbesetzung, p = 0,14).
 - Menschliche Codierung: Bogen in `daten/handcodierung/`, Ergebnis steht aus.
+
+## Vollständigkeit (Modellprüfung, 25.11.2026)
+
+54 Stellen, blind bewertet von Gemini, Claude, DeepSeek, Grok und ChatGPT (`daten/handcodierung/modelle/`, gespeichert sind Kennung und Kategorie). Fleiss' Kappa 0,96.
+
+- Teil A, 27 Treffer des Wortfelds: 24 meinen das Preisniveau (89 %).
+- Teil B, 27 Stellen mit allgemeinen Preiswörtern ohne Treffer: 1 meint das Preisniveau (Teuerungszulagen, 1953; 95-%-Intervall 0,1 % bis 19 %).
+- Hochrechnung 1949–2025: 23.475 Treffer, davon rund 20.900 richtig; 131.098 Stellen ohne Treffer, davon geschätzt rund 4.900 zum Preisniveau. Vollständigkeit rund 81 %, Spanne etwa 46 % bis nahezu 100 %.
+- Die übersehene Stelle liegt vor 1990; in den 12 Stellen ab 2000 keine. Kein Hinweis, dass das Wortfeld nach dem Bruch mehr verfehlt.
