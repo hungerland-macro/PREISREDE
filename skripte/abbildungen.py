@@ -206,8 +206,6 @@ def datenmappe(plenum, infl, anf, ziel):
          + [["2026, Jan.–Sep.", LAUFEND_PLENUM, LAUFEND[1]]]),
         ("Abb2", ["Jahr", "Zeitraum", "Inflationsrate in %", "Preiswörter je Mio. Wörter"],
          [[j, "1951-1998" if j < 1999 else "1999-2025", infl.get(j), plenum[j]] for j in jahre if 1951 <= j <= 2025]),
-        ("Abb3", ["Jahr", "Preiswörter je Mio. Wörter", "Anfragen zu Preisniveau und Messung je 1000 Anfragen"],
-         [[j, plenum[j], round(1000 * ms[j] / nenner[j], 2) if j in ja else None] for j in jahre]),
     ]
     ws = wb.active
     for i, (name, kopf, zeilen) in enumerate(blaetter):
