@@ -1,6 +1,6 @@
 ---
-title: "Wann das Parlament über Preise spricht"
-subtitle: "Eine Aufmerksamkeitsreihe für den Bundestag, 1949 bis 2025"
+title: "Preise im Plenum"
+subtitle: "Wie der Bundestag seit 1949 über Inflation spricht"
 author: "Wolf-Fabian Hungerland"
 lang: de
 ---
@@ -9,7 +9,7 @@ Der Beitrag gibt die persönliche Auffassung des Autors wieder.
 
 ### Abstract
 
-In den 1950er und 1960er Jahren fiel in jeder 20. längeren Bundestagsrede ein Wort wie Inflation, Kaufkraftverlust oder Preisstabilität. In den 2000er und 2010er Jahren war es nur noch jede 56., obwohl die Inflation in beiden Zeiträumen meist unter 3 % lag. Der Beitrag zählt solche Wörter in allen 4.610 Plenarprotokollen von 1949 bis 2025. Das Parlament reagiert auf große Inflationsschübe, 1973 und 2022 fast gleich stark. Zwischen den Schüben aber wurde das Preisniveau vom Dauerthema der Bonner Republik zum Ausnahmethema. Die Debatte wanderte zu Energiepreisen und Zinsen. Der Bruch liegt um das Jahr 2000, zeitgleich mit dem Übergang der Geldpolitik auf die Europäische Zentralbank.
+In den 1950er und 1960er Jahren fiel in jeder 20. längeren Bundestagsrede ein Wort wie Inflation, Kaufkraftverlust oder Preisstabilität. In den 2000er und 2010er Jahren war es nur noch jede 56., obwohl die Inflation in beiden Zeiträumen meist unter 3 % lag. Der Beitrag zählt solche Wörter in allen 4.610 Plenarprotokollen von 1949 bis 2025. Das Parlament reagiert auf große Inflationsschübe, 1973 und 2022 fast gleich stark. Zwischen den Schüben aber spricht es seit etwa 2000 deutlich seltener darüber als früher: Das Preisniveau, in der Bonner Republik ein Dauerthema, ist zu einem Thema vor allem für Schübe geworden. Die Debatte wanderte zu Energiepreisen und Zinsen. Der Bruch fällt zeitlich mit dem Übergang der Geldpolitik auf die Europäische Zentralbank zusammen.
 
 JEL-Codes: E31, E58, N14
 
@@ -43,7 +43,7 @@ Steigt die Inflation stark, spricht der Bundestag über Preise. Die beiden Gipfe
 
 Der Schub der 1970er Jahre begann im Parlament als Debatte über Wechselkurse. Bei festen Kursen im System von Bretton Woods trieben Exportüberschüsse und Devisenzuflüsse die Preise in der Bundesrepublik; eine Aufwertung der D-Mark verbilligte Importe und dämpfte diesen Druck. Im Jahr der Aufwertung 1969 erreichten Wörter wie Aufwertung und Wechselkurs mit 259 je Million Wörter ihren Höchststand, nach 17 im Jahr 1967. 1970 sprang die Reihe der Preiswörter von 93 auf 306, während die Rate von 2,1 % auf 3,3 % stieg. Der erste große Preisschub im Parlament kam damit vor dem Ölpreisschock von 1973 und über den Außenhandel. Ob die Debatte der Rate vorauslief, zeigen Jahresdaten nicht.
 
-### Zwischen den Schüben wurde es still
+### Zwischen den Schüben wurde es leiser
 
 In ruhigen Jahren spricht das Parlament heute nur noch rd. 40 % so oft über das Preisniveau wie in den 1950er und 1960er Jahren. In Jahren mit Raten unter 3 % kamen von 1953 bis 1969 im Median 64 Preiswörter auf eine Million Wörter, von 1999 bis 2025 noch 26. Die Inflation lag in diesen Jahren im Mittel bei 1,6 % und 1,4 %; an der Rate liegt der Unterschied also nicht. Die Jahre 1953 bis 1969 folgen auch auf keinen großen Schub, das hohe frühe Niveau ist kein bloßes Nachklingen früherer Inflation. Von den Reden mit mindestens 300 Wörtern enthielt in den ruhigen Jahren vor 1999 im Median jede 22. ein Preiswort, von 1999 bis 2020 nur noch jede 56.
 
@@ -81,7 +81,7 @@ Selten geworden ist das Preisniveau, nicht die Wirtschaftspolitik insgesamt. Die
 
 Den Rückgang tragen alle großen Fraktionen. Nach einer Auswertung mit Open Discourse, einem Datensatz der Reden mit Fraktion und Funktion des Redners, sank der Median in ruhigen Jahren bei der CDU/CSU von 82 auf 36 Preiswörter je Million Wörter, bei der SPD von 73 auf 26 und bei der FDP von 74 auf 43. Neue Fraktionen mit anderen Themen erklären ihn also nicht. In den Schüben ist das Preisniveau vor allem ein Thema der Opposition, 1973 mit 905 gegen 263 Preiswörter je Million Wörter, 2022 mit 658 gegen 356. Bei gleicher Partei und gleichem Jahr sprechen Regierungsparteien rd. 13,5 % weniger über Preise als in der Opposition (p < 0,01). Nach 1999 ändert sich dieser Abstand nicht.
 
-### Warum es still wurde: drei mögliche Erklärungen
+### Warum es leiser wurde: drei mögliche Erklärungen
 
 Am nächsten liegt die Übertragung der Geldpolitik an die Europäische Zentralbank (EZB). Seit der Währungsunion entscheidet keine deutsche Institution mehr allein über die Zinsen, und das Preisniveau könnte deshalb aus dem parlamentarischen Alltag verschwunden sein. Dazu passt, dass die Konfidenzmenge des Bruchjahrs 1999 bis 2004 umfasst und nicht 1990. Die Aufmerksamkeit dürfte dabei teils zum Instrument gewandert sein: Wörter zu Zins und Geldpolitik stiegen nach 1999 in ruhigen Jahren um ein Viertel bis die Hälfte, und Politiker kommentieren die Geldpolitik der EZB meist mit dem Wunsch nach niedrigeren Zinsen ([Ehrmann & Fratzscher, 2011](https://doi.org/10.1162/REST_a_00113)). Gegen diese Lesart spricht, dass schon die Bank deutscher Länder ab 1948 und die Bundesbank ab 1957 von der Bundesregierung unabhängig waren.
 
@@ -89,7 +89,7 @@ Ebenso könnte der Rückzug des Staates aus der Preispolitik den Rückgang erkl�
 
 Schließlich könnte die Disinflation in vielen Industrieländern seit den 1990er Jahren den Rückgang tragen. Mit niedrigeren, stabileren Raten und fester verankerten Erwartungen wäre weniger Preisrede auch ohne Währungsunion zu erwarten. Ein Land allein kann diese drei Erklärungen nicht trennen; dafür bräuchte es Parlamente innerhalb und außerhalb des Euroraums.
 
-### Nach 2022: schnelle Rückkehr zur Stille
+### Nach 2022: schnelle Rückkehr zum Grundniveau
 
 Nach dem Schub von 2022 kehrte das Parlament so schnell zum Grundniveau zurück, wie es die Rate erwarten lässt. Haushalte verhalten sich anders. Nach [Korenok und Munro (2024)](https://ideas.repec.org/p/zbw/glodps/1463.html) bleibt ihre Aufmerksamkeit nach dem Rückgang der Inflation zwei- bis dreimal so hoch wie vor dem Anstieg, für Nachrichten beschreibt die EZB Ähnliches ([Aarab et al., 2025](https://www.ecb.europa.eu/press/economic-bulletin/focus/2025/html/ecb.ebbox202506_05~b5c5ed8127.en.html)). Im Bundestag lag die Reihe 2025 mit 47 Preiswörtern je Million Wörter zwar beim 2,4-Fachen des Mittels der Jahre 2015 bis 2020. Die Rate war mit 2,2 % aber auch etwa doppelt so hoch. Das Modell aus Tab. 1, Spalte 1, erwartet für 2025 sogar 68 und für Januar bis September 2026 genau den beobachteten Wert von 50.
 
@@ -97,7 +97,7 @@ Anfragen sind für diese Frage ein schlechter Ersatz. Unter allen 43.866 Kleinen
 
 ### Was daraus folgt
 
-Für die Geldpolitik dürfte die Stille ein zweischneidiger Befund sein. Spricht das Parlament bei Raten nahe dem Ziel kaum über das Preisniveau, schützt das die Notenbank vor kurzfristigem Druck. Abweichungen vom Ziel könnten dann aber lange ohne Debatte bleiben. In den 2010er Jahren mit zu niedriger Inflation sprach der Bundestag eher über Zinsen als über Preise. Ob diese Stille Vertrauen oder Desinteresse ausdrückt, zeigen die Daten nicht. Der formale Ort der Rechenschaft der EZB ist ohnehin das Europäische Parlament.
+Für die Geldpolitik dürfte die geringe Aufmerksamkeit ein zweischneidiger Befund sein. Spricht das Parlament bei Raten nahe dem Ziel kaum über das Preisniveau, schützt das die Notenbank vor kurzfristigem Druck. Abweichungen vom Ziel könnten dann aber lange ohne Debatte bleiben. In den 2010er Jahren mit zu niedriger Inflation sprach der Bundestag eher über Zinsen als über Preise. Ob diese Zurückhaltung Vertrauen oder Desinteresse ausdrückt, zeigen die Daten nicht. Der formale Ort der Rechenschaft der EZB ist ohnehin das Europäische Parlament.
 
 Für die Wirtschaftsgeschichte zeigt die Reihe einen Wandel der parlamentarischen Stabilitätsdebatte. Das Preisniveau war in der Bonner Republik ein Dauerthema des Parlaments und ist es seit etwa 2000 nicht mehr. Der Wandel erfasst alle Fraktionen und fällt zeitlich mit der Währungsunion zusammen. Ob die Delegation, der Rückzug staatlicher Preissteuerung oder die weltweite Disinflation ihn trägt, bleibt offen.
 
