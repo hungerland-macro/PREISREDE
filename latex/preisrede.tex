@@ -8,6 +8,7 @@
 \usepackage{microtype}
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{array}
 \usepackage{unicode-math}
 \setmathfont{texgyrepagella-math.otf}
 \usepackage{siunitx}
@@ -36,12 +37,12 @@
 \vspace{1em}
 {\sffamily Wolf-Fabian Hungerland\footnote{Der Beitrag gibt die persönliche Auffassung des Autors wieder. Daten und Skripte: \url{https://github.com/hungerland-macro/PREISREDE}.}\par}
 \vspace{0.3em}
-{\sffamily\small Fassung vom 22.~November 2026\par}
+{\sffamily\small Fassung vom 25.~November 2026\par}
 \end{flushleft}
 \vspace{0.8em}
 \noindent\begin{minipage}{\linewidth}\small
-\textsf{\textbf{Abstract.}} Der Beitrag misst, wie oft der Bundestag über Preise und Inflation spricht: Er zählt Preiswörter je Million Wörter in allen 4.610 Plenarprotokollen von 1949 bis 2025. Die Reihe reagiert vor allem auf die beiden großen Inflationsschübe, die Gipfel 1973 und 2022 sind fast gleich hoch. Um 1990 hat sich die Form gewandelt: Aus einem Dauerthema wurde ein Schockthema, das erst bei kräftigen Anstiegen der Rate anspringt und nach 2022 rascher abebbte, als Studien zu Haushalten und Medien es beschreiben. Eine Schwelle um 3,7 \% ist angedeutet, statistisch aber nicht gesichert. Kleine und Große Anfragen erfassen den ersten Ölpreisschock gar nicht; das Messinstrument entscheidet mit.\par\vspace{0.4em}
-\textsf{\textbf{JEL:}} E31, E58, D72
+\textsf{\textbf{Abstract.}} Der Beitrag zählt Preis- und Inflationswörter in allen 4.610 Plenarprotokollen des Bundestages von 1949 bis 2025. Die Reihe folgt den großen Inflationsschüben; die Gipfel 1973 und 2022 sind fast gleich hoch. Seit Ende der 1990er Jahre hat sich das Grundniveau halbiert: In ruhigen Jahren spricht das Parlament nur noch halb so oft über das Preisniveau wie zuvor. Das gilt auch für reinen Redetext, ohne die Schübe und gemessen an anderen Makrothemen. Aus einem Dauerthema wurde ein Thema für Schübe. Zugleich verschob sich die Debatte zu Energiepreisen, während Wörter der staatlichen Preis- und Lohnsteuerung fast verschwanden. Die Opposition spricht in Schüben deutlich mehr über Preise als die Regierung.\par\vspace{0.4em}
+\textsf{\textbf{JEL:}} E31, E58, N14
 \end{minipage}
 \vspace{0.6em}
 
@@ -49,141 +50,130 @@
 
 \section{Warum parlamentarische Aufmerksamkeit messen}
 
-Inflation ist eine Größe der Statistik und zugleich ein Gegenstand politischen Streits. Ob und wann dieser Streit stattfindet, bestimmt mit, unter welchem Druck Geldpolitik, Tarifparteien und Regierung stehen. Die Forschung zur Inflationsaufmerksamkeit hat dafür in den vergangenen Jahren Maße entwickelt, die fast alle an privaten Haushalten oder Medien ansetzen: Suchanfragen und Twitter (Korenok et al., 2026), Nennungen in Zeitungen (Lamla \& Lein, 2014; Aarab et al., 2025), Antwortmuster in Umfragen (Bracha \& Tang, 2025). Wie viel Aufmerksamkeit der Inflation zukommt, ist dabei mehr als eine Messfrage, denn sie verändert die Wirkung der Geldpolitik (Pfäuti, 2025). Das Parlament, in dem der Streit institutionell stattfindet, ist dabei weitgehend unbeachtet geblieben. Textanalysen gibt es zum Bundestag für Fiskalpolitik (Latifi et al., 2024) und Zukunft (Küsters \& Andritzky, 2024), zu Anhörungen von Zentralbanken (Fraccaroli et al., 2020) und zur Inflationsrhetorik kanadischer Abgeordneter (Rancourt et al., 2025).
+Inflation ist eine Größe der Statistik und zugleich ein Gegenstand politischen Streits. Ob und wann dieser Streit stattfindet, bestimmt mit, unter welchem Druck Geldpolitik, Tarifparteien und Regierung stehen. Die Forschung zur Inflationsaufmerksamkeit misst fast nur private Haushalte und Medien: Suchanfragen und Twitter (Korenok et al., 2026), Nennungen in Zeitungen (Lamla \& Lein, 2014; Aarab et al., 2025), Antwortmuster in Umfragen (Bracha \& Tang, 2025). Aufmerksamkeit ist dabei mehr als eine Messfrage, denn sie verändert die Wirkung der Geldpolitik (Pfäuti, 2025). Das Parlament ist weitgehend unbeachtet geblieben. Textanalysen gibt es zum Bundestag für Fiskalpolitik (Latifi et al., 2024) und Zukunft (Küsters \& Andritzky, 2024), zu Anhörungen von Zentralbanken (Fraccaroli et al., 2020) und zur Inflationsrhetorik kanadischer Abgeordneter (Rancourt et al., 2025). Die deutsche Agenda-Forschung codiert Anfragen und Gesetze nach Politikfeldern, aber erst ab 1978 und nicht nach Inflation (Breunig \& Schnatterer, 2019).
 
-Dieser Beitrag schließt die Lücke für Deutschland. Er misst den Raum, den Preise und Inflation seit 1949 in den Reden des Bundestages einnehmen. Die Reihe ist damit erheblich länger als die bisher vorliegenden Maße, und sie reicht über zwei Inflationsepisoden, die in Höhe und Verlauf vergleichbar sind, in ihrem politischen Umfeld aber nicht: die Jahre nach dem ersten Ölpreisschock und die Jahre nach 2021.
+Dieser Beitrag misst den Raum, den Preise und Inflation seit 1949 in den Reden des Bundestages einnehmen. Die Reihe ist erheblich länger als die vorliegenden Maße. Ihr Wert liegt weniger in der Reaktion auf einzelne Inflationsraten als im historischen Wandel: Sie reicht über zwei Schübe, die in Höhe und Verlauf vergleichbar sind, in ihrem institutionellen Umfeld aber nicht.
 
 \section{Daten und Maß}
 
-Grundlage sind die Plenarprotokolle aus dem Corpus der Plenarprotokolle des Deutschen Bundestages (CPP-BT) von Sean Fobbe (2026), Fassung vom 19. September 2026, veröffentlicht unter CC0. Der Korpus umfasst 4.653 Protokolle der 1. bis 21. Wahlperiode. Die Schätzungen nutzen die vollen Jahre 1949 bis 2025 mit 4.610 Protokollen; die 43 Sitzungen von Januar bis September 2026 zeigt Abbildung 1 gesondert. Für jedes Protokoll zähle ich die Gesamtzahl der Wörter sowie die Treffer zweier Wortfelder und bilde daraus Jahreswerte je Million Wörter. Die Normierung ist nötig, denn der Umfang schwankt von 1,6 Mio. Wörtern 1961 bis 7,0 Mio. Wörtern 2011.
+Grundlage sind die Plenarprotokolle aus dem Corpus der Plenarprotokolle des Deutschen Bundestages (CPP-BT) von Sean Fobbe (2026), Fassung vom 19. September 2026, veröffentlicht unter CC0. Der Korpus umfasst 4.653 Protokolle der 1. bis 21. Wahlperiode. Die Schätzungen nutzen die vollen Jahre 1949 bis 2025 mit 4.610 Protokollen; die 43 Sitzungen von Januar bis September 2026 zeigt Abbildung~\ref{fig:1} gesondert. Für jedes Protokoll zähle ich die Wörter und die Treffer eines Wortfelds und bilde Jahreswerte je Million Wörter. Die Normierung ist nötig, denn der Umfang schwankt zwischen 1,6 Mio. Wörtern 1961 und 7,0 Mio. Wörtern 2011.
 
-Das erste Wortfeld erfasst das Preisniveau als Gesamtgröße: Inflation und ihre Zusammensetzungen, Deflation, Preisauftrieb, Preisniveau, Preisstabilität, Geldentwertung, Geldwertstabilität, Kaufkraftverlust und Lebenshaltungskosten. Das zweite Wortfeld erfasst die Messung: Preisindex, Verbraucherpreisindex, Preisstatistik, Warenkorb, Lebenshaltungsindex. Einzelne Preise, etwa für Energie, Mieten oder Lebensmittel, bleiben außen vor, weil sie im Plenum ständig und in jedem Politikfeld vorkommen und das Maß unbrauchbar machen würden.
+Das Wortfeld erfasst das Preisniveau als Gesamtgröße: Inflation und ihre Zusammensetzungen, Deflation, Preisauftrieb, Preisniveau, Preisstabilität, Geldentwertung, Geldwertstabilität, Kaufkraftverlust und Lebenshaltungskosten. Einzelne Preise, etwa für Energie, Mieten oder Lebensmittel, zählen nicht mit, weil sie in jedem Politikfeld vorkommen. Sie laufen als eigenes Wortfeld mit, ebenso Placebo-Felder für andere Makrothemen.
 
-Um die Trefferqualität zu prüfen, habe ich eine Zufallsstichprobe von 180 Treffern gelesen, 20 je Jahrzehnt. 89 \% meinen das allgemeine Preisniveau oder die Inflation, vor 1990 87 \%, danach 91 \%. Der Rest betrifft meist sektorale Preisniveaus, etwa in der Landwirtschaft, oder übertragene Bedeutungen wie „Inflation von Konzepten``. Die Trefferqualität ist also über die Zeit ähnlich. Auch ein Wechsel des Vokabulars erklärt den Rückgang nach 1990 nicht: Ausdrücke außerhalb des Wortfelds wie Preissteigerung, Teuerung oder steigende Preise gingen in Jahren mit Raten unter 3 \% noch stärker zurück, von 35 auf 10 je Million Wörter. Die Einstufung wurde blind wiederholt, an 50 Treffern, darunter allen schwierigen Fällen, durch vier Sprachmodelle verschiedener Anbieter (ChatGPT, Gemini, DeepSeek, Claude). Sie stimmen mit der Erstcodierung zu 88 \% bis 94 \% überein, Fleiss' Kappa über alle fünf Codierungen beträgt 0,90. In drei Fällen, in denen alle vier Modelle anders urteilten, gilt ihr Urteil. Die Protokolle enthalten auch die Fragestunde und in den Anlagen die schriftlich beantworteten Fragen; mündliche und schriftliche Einzelfragen sind im Maß also enthalten. Eigens geprüft habe ich Komposita, die das Preisniveau nur mittelbar meinen, vor allem die Inflationsausgleichsprämie ab 2022. Ohne sie sinkt der Wert für 2022 von 372 auf 350 und für 2023 von 182 auf 147; an den Ergebnissen ändert das nichts Wesentliches.
+Zur Prüfung der Trefferqualität wurde eine Zufallsstichprobe von 180 Treffern, 20 je Jahrzehnt, bewertet. Die Erstbewertung nahm das Sprachmodell Claude vor. 89~\% der Treffer meinen das allgemeine Preisniveau oder die Inflation, vor 1990 87~\%, danach 91~\%. Der Rest betrifft meist sektorale Preisniveaus oder übertragene Bedeutungen wie „Inflation von Konzepten“. Die Bewertung von 50 Treffern, darunter allen schwierigen Fällen, wiederholten ChatGPT, Gemini, DeepSeek und Claude blind. Fleiss' Kappa beträgt 0,90 über alle fünf Codierungen, 0,88 ohne die blinde Claude-Codierung und 0,93 unter den drei anderen Modellen allein. In drei Fällen, in denen alle vier Modelle anders urteilten, gilt ihr Urteil. Die Protokolle enthalten auch Fragestunden und schriftlich beantwortete Fragen. Komposita, die das Preisniveau nur mittelbar meinen, vor allem Inflationsausgleichsprämie und Inflationsausgleichsgesetz ab 2022, habe ich eigens geprüft: Ohne sie sinkt der Wert für 2022 von 372 auf 350, am Befund ändert das nichts.
 
-Als zweite Reihe dient die parlamentarische Anfrage. Über die Schnittstelle des Doku\-men\-ta\-tions- und Informa\-tions\-sys\-tems für Parlaments\-materialien (DIP) habe ich alle Kleinen und Großen Anfragen gelesen, ihre Titel nach demselben, um historisches Vokabular erweiterten Wortkatalog gesiebt und die Treffer nach ihrem Titel in sechs Kategorien eingeteilt, von der Frage nach dem Preisniveau bis zum Fehltreffer. Vier blinde Wiederholungen durch Sprachmodelle stimmen mit dieser Einteilung zu 91 \% bis 95 \% überein (Fleiss' Kappa 0,91); in fünf Fällen gilt ihre Mehrheit. Als Nenner dient die Zahl aller Anfragen desselben Jahres. Sie steigt von gut hundert in den 1950er Jahren auf über 3.600 im Jahr 2019. Für die erste Wahlperiode zählen auch Anfragen und Interpellationen, wie die Datenbank sie damals nennt.
+Als zweite Reihe dienen die parlamentarischen Anfragen. Über die Schnittstelle des Dokumentations- und Informationssystems für Parlamentsmaterialien (DIP) habe ich alle 43.866 Kleinen und Großen Anfragen abgerufen, ihre Titel nach demselben, um historisches Vokabular erweiterten Katalog gesiebt und die Treffer in sechs Kategorien eingeteilt. Vier blinde Wiederholungen durch Sprachmodelle stimmen damit zu 91~\% bis 95~\% überein (Fleiss' Kappa 0,91; ohne je einen Lauf 0,89 bis 0,94); in fünf Fällen gilt ihre Mehrheit.
 
-Die Inflationsrate ist die jahresdurchschnittliche Veränderung gegenüber dem Vorjahr. Bis 1991 nutze ich den Preisindex für die Lebenshaltung der Vier-Personen-Haushalte von Arbeitern und Angestellten mit mittlerem Einkommen im früheren Bundesgebiet, weil nur er bis 1950 zurückreicht (Statistisches Bundesamt, 2023). Ab 1992 folgt der Verbraucherpreisindex für Deutschland (Statistisches Bundesamt, 2026). Mit dem Index aller privaten Haushalte, der ab 1963 vorliegt, ändern sich die Ergebnisse kaum.
+Die Inflationsrate ist die jahresdurchschnittliche Veränderung gegenüber dem Vorjahr. Bis 1991 nutze ich den Preisindex für die Lebenshaltung der Vier-Personen-Haushalte von Arbeitern und Angestellten mit mittlerem Einkommen im früheren Bundesgebiet, weil nur er bis 1950 zurückreicht (Statistisches Bundesamt, 2023). Ab 1992 folgt der Verbraucherpreisindex für Deutschland (Statistisches Bundesamt, 2026).
 
 \section{Befund 1: Die Debatte folgt den großen Schüben}
 
-Abbildung~\ref{fig:plenum} zeigt beide Reihen. Die beiden Gipfel liegen fast gleichauf: 371 Preiswörter je Million Wörter 1973 und 372 im Jahr 2022. Über den ganzen Zeitraum beträgt die Korrelation mit der Inflationsrate 0,57. Sie beruht aber fast ganz auf den beiden Schüben: Ohne die Jahre 1970 bis 1975 und 2022 bis 2023 sinkt sie auf 0,26, in jährlichen Veränderungen liegt sie bei 0,20. Zum Vergleich: Ein Placebo-Wortfeld zu Bundeswehr und Verteidigung korreliert über den ganzen Zeitraum zu 0,26 mit der Inflation. Die Preisrede liegt nur wegen der Schübe darüber; jenseits davon sagt die Rate über sie wenig.
+Abbildung~\ref{fig:1} zeigt beide Reihen. Die Gipfel liegen fast gleichauf: 371 Preiswörter je Million Wörter 1973 und 372 im Jahr 2022. Über den ganzen Zeitraum beträgt die Korrelation mit der Inflationsrate 0,57. Sie beruht aber fast ganz auf den Schüben: Ohne die Jahre 1970 bis 1975 und 2022 bis 2023 sinkt sie auf 0,26. Jenseits der Schübe sagt die Rate über die Debatte wenig.
 
 \begin{figure}[tb]
-\caption{Preiswörter im Plenum und Inflationsrate, 1949 bis 2025}\label{fig:plenum}
+\caption{Preiswörter im Plenum und Inflationsrate, 1949 bis 2025}\label{fig:1}
 \includegraphics[width=\linewidth]{abbildungen/Abb1_Plenum_Inflation.pdf}
-\begin{figurenotes}Oben: Treffer des Wortfelds Preisniveau je Million Wörter der Plenarprotokolle. Unten: Veränderung des Preisindex gegenüber dem Vorjahr, Jahresdurchschnitt, ab 1950; bis 1991 früheres Bundesgebiet. Hohle Punkte: Januar bis September 2026. Gestrichelt und nummeriert: 1~Bundesbankgesetz (1957), 2~Stabilitätsgesetz (1967), 3~Ende von Bretton Woods und erster Ölpreisschock (1973), 4~zweiter Ölpreisschock (1979), 5~Wiedervereinigung (1990), 6~Euro (1999), 7~Finanzkrise (2008), 8~Corona-Pandemie (2020), 9~Krieg gegen die Ukraine (2022).\par\textit{Quellen:} Fobbe (2026); Statistisches Bundesamt (2023, 2026); Deutsche Bundesbank; eigene Berechnungen.\end{figurenotes}
+\begin{figurenotes}Oben: Treffer des Wortfelds Preisniveau je Million Wörter der Plenarprotokolle. Unten: Veränderung des Preisindex gegenüber dem Vorjahr, Jahresdurchschnitt. Hohle Punkte: Januar bis September 2026. Gestrichelt: 1 Bundesbankgesetz, 2 Stabilitätsgesetz, 3 Bretton Woods endet, erster Ölpreisschock, 4 zweiter Ölpreisschock, 5 Wiedervereinigung, 6 Euro, 7 Finanzkrise, 8 Corona, 9 Krieg gegen die Ukraine.\par\textit{Quellen:} Fobbe (2026); Statistisches Bundesamt; Deutsche Bundesbank; eigene Berechnungen.\end{figurenotes}
 \end{figure}
 
-Tabelle~\ref{tab:reaktion} zeigt zwei Schätzungen: Spalte 1 misst im Niveau, wie stark die Debatte mit der Rate steigt und wie lange sie nachwirkt; Spalte 2 misst in Veränderungen, ob Anstiege und Rückgänge verschieden wirken und ob sich das nach 1990 ändert. Ein Prozentpunkt mehr Inflation geht mit rund 12 \% mehr Preisrede im selben Jahr einher, auf lange Sicht mit rund 40 \%. Der Koeffizient des Vorjahreswerts liegt bei 0,67: Eine Debatte, die einmal läuft, trägt sich über mehrere Jahre.
-
-Auffällig ist 1970: Die Reihe springt von 93 auf 306, obwohl die Rate erst bei 3,3 \% lag und ihren Gipfel drei Jahre später erreichte. Die Debatte stieg hier vor der Rate. Naheliegende Anlässe sind die Aufwertungsdebatte und die importierte Inflation am Ende von Bretton Woods sowie der neue Rahmen des Stabilitätsgesetzes; geprüft habe ich das nicht.
+Auffällig ist 1970: Die Reihe springt von 93 auf 306, obwohl die Rate erst bei 3,3~\% lag. Die Debatte stieg vor der Rate. Ein Anlass ist in den Protokollen sichtbar: 1969 erreichten Wörter wie Aufwertung und Wechselkurs mit 259 je Million Wörter ihren Höchststand, nach 17 im Jahr 1967. Die Preisdebatte von 1970 begann als Debatte über importierte Inflation unter festen Wechselkursen.
 
 \section{Befund 2: Vom Dauerthema zum Schockthema}
 
-Aufschlussreicher ist der Vergleich der Epochen. Schätzt man die Veränderung der Aufmerksamkeit getrennt nach Anstiegen und Rückgängen der Rate, zeigt sich keine Asymmetrie: Beide Richtungen wirken gleich stark (p = 0,58 für die Differenz). Lässt man dagegen einen Bruch im Jahr 1990 zu, ändert sich das Bild grundlegend (Tabelle~\ref{tab:reaktion}, Spalte~2).
+Tabelle~\ref{tab:1} schätzt die Reihe in Niveaus mit dem Vorjahreswert, also als Fehlerkorrekturmodell. Ein Strukturbruch darf das langfristige Niveau und die Reaktion auf die Rate verschieben. Ein Bruchtest über die Jahre 1975 bis 2005 legt ihn in die Jahre 1999 bis 2002, am deutlichsten 2002 (p = 0,001, Bootstrap). Spalte 1 nutzt 1999, das Jahr des Euro-Starts; mit 2002 ändern sich die Ergebnisse kaum. Spalte 2 setzt zum Vergleich 1990.
 
 \begin{table}[tb]
-\caption{Reaktion der Aufmerksamkeit auf die Inflationsrate}\label{tab:reaktion}
-\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}l S[table-format=-1.3] S[table-format=-1.3]@{}}
+\caption{Aufmerksamkeit und Inflationsrate, mit Strukturbruch}\label{tab:1}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{4.3cm}cccc@{}}
 \toprule
-Erklärende Größe & {(1) Niveau, log} & {(2) Veränderung, Bruch 1990} \\
+Erklärende Größe & {\footnotesize\shortstack{(1)\\ Bruch 1999}} & {\footnotesize\shortstack{(2)\\ Bruch 1990}} & {\footnotesize\shortstack{(3)\\ nur Redetext}} & {\footnotesize\shortstack{(4)\\ ohne 1951/52 und 2021/23}} \\
 \midrule
-Inflationsrate & 0,118 & \\
- & {\footnotesize(0,038)} & \\
-Aufmerksamkeit im Vorjahr, log & 0,667 & \\
- & {\footnotesize(0,000)} & \\
-Anstieg der Rate & & -0,010 \\
- & & {\footnotesize(0,264)} \\
-Rückgang der Rate & & 0,068 \\
- & & {\footnotesize(0,066)} \\
-Anstieg der Rate, zusätzlich ab 1990 & & 0,511 \\
- & & {\footnotesize(0,000)} \\
-Rückgang der Rate, zusätzlich ab 1990 & & -0,071 \\
- & & {\footnotesize(0,412)} \\
-Konstante, zusätzlich ab 1990 & & -0,253 \\
- & & {\footnotesize(0,018)} \\
+Inflationsrate & 0,060 & 0,078 & 0,062 & 0,062 \\
+ & {\footnotesize(0,079)} & {\footnotesize(0,037)} & {\footnotesize(0,083)} & {\footnotesize(0,052)} \\
+Rate, zusätzlich ab Bruch & 0,240 & 0,142 & 0,255 & 0,125 \\
+ & {\footnotesize(0,000)} & {\footnotesize(0,110)} & {\footnotesize(0,000)} & {\footnotesize(0,119)} \\
+Niveau, zusätzlich ab Bruch & $-$0,769 & $-$0,655 & $-$0,757 & $-$0,567 \\
+ & {\footnotesize(0,000)} & {\footnotesize(0,009)} & {\footnotesize(0,000)} & {\footnotesize(0,000)} \\
+Vorjahreswert, log & 0,588 & 0,550 & 0,582 & 0,645 \\
+ & {\footnotesize(0,000)} & {\footnotesize(0,000)} & {\footnotesize(0,000)} & {\footnotesize(0,000)} \\
+Langfristwert bei 2~\% & 70 / 34 & 76 / 33 & 82 / 45 & 73 / 30 \\
 \midrule
-Beobachtungen & {75} & {75} \\
-$R^2$ & 0,69 & 0,28 \\
+Beobachtungen & 75 & 75 & 75 & 70 \\
+$R^2$ & 0,75 & 0,73 & 0,73 & 0,78 \\
 \bottomrule
 \end{tabular*}
-\begin{tablenotes}Jahreswerte 1951 bis 2025. Abhängige Größe in Spalte 1 ist der Logarithmus der Treffer je Million Wörter, in Spalte 2 dessen Veränderung gegenüber dem Vorjahr. Konstante nicht ausgewiesen. In Klammern p-Werte, HAC-Standardfehler mit drei Lags. Die zusätzliche Konstante ab 1990 ist ein Trend: Bei unveränderter Rate sinkt die Aufmerksamkeit dann um gut ein Fünftel je Jahr. Lässt man je ein Jahr weg, liegt der Koeffizient für den Anstieg ab 1990 zwischen 0,233 (ohne 2022, p = 0,004) und 0,601 (ohne 2021). Ab 1953 geschätzt, ohne die Jahre der Währungsreform: vor 1990 0,057 (p = 0,56), zusätzlich ab 1990 0,444 (p = 0,002). Mit Bruch 1999: 0,552 (p \textless{} 0,001), ohne 2022 0,274 (p = 0,003).\par\textit{Quellen:} Fobbe (2026); Statistisches Bundesamt; eigene Berechnungen.\end{tablenotes}
+\begin{tablenotes}Abhängige Größe ist der Logarithmus der Treffer je Million Wörter, Jahre 1951 bis 2025. Konstante nicht ausgewiesen. In Klammern p-Werte, HAC-Standardfehler mit drei Lags. Langfristwert: Treffer je Million Wörter im Gleichgewicht bei einer Rate von 2~\%, vor und ab dem Bruch. Spalte 3: nur Redetext, bis 2021 aus Open Discourse (Richter et al., 2023), ab 2022 aus dem Reden-Datensatz des CPP-BT. Spalte 4: Bruch 1999, ohne die Korea-Jahre und den jüngsten Schub.\par\textit{Quellen:} Fobbe (2026); Richter et al. (2023); Statistisches Bundesamt; eigene Berechnungen.\end{tablenotes}
 \end{table}
 
+Der robuste Befund ist das Grundniveau. Bei einer Rate von 2~\% lag die Aufmerksamkeit vor dem Bruch langfristig bei 70 bis 82 Preiswörtern je Million Wörter, danach bei 30 bis 45. Diese Halbierung zeigt sich in allen Spalten. Sie bleibt, wenn man je eine der fünf Inflationsepisoden weglässt, wenn man statt der verketteten Reihe den Index aller privaten Haushalte ab 1964 nutzt und wenn man das Bruchjahr 1990 setzt. Vor 1999 lief das Preisthema in guten wie in schlechten Jahren mit; seither ist es in ruhigen Jahren selten.
 
-Vor 1990 bewegte ein Anstieg der Inflationsrate die Debatte praktisch nicht. Das Preisthema lief auf hohem Grundniveau ohnehin mit, in guten wie in schlechten Jahren. Seit 1990 liegt das Grundniveau deutlich tiefer: In Jahren mit Raten unter 3 \% kamen vor 1990 im Median 66 Preiswörter auf eine Million Wörter, danach 28. Dafür springt die Debatte bei Anstiegen der Rate: Je Prozentpunkt steigt die Zahl der Preiswörter ohne das Jahr 2022 um rund 25 \%, mit 2022 um rund 65 \%. Das Jahr 2022 bestimmt also die Größe, nicht die Richtung des Befunds. Nach 1990 gab es zwei große Anstiege der Rate, 1991 bis 1993 und 2021 bis 2023. Der Befund beschreibt, wie das Parlament auf diese Schübe reagierte; eine allgemeine Reaktionsfunktion ist er nicht. Das Bruchjahr 1990 ist gesetzt. Lässt man die Daten zwischen 1975 und 2005 wählen, bevorzugen sie 1999, das Jahr des Euro-Starts (p = 0,002, Bootstrap); ohne 2022 bleibt 1999 das wahrscheinlichste Jahr, der Test verliert aber seine Schärfe. Die Ergebnisse ändern sich mit 1999 kaum. Ich bleibe bei 1990, weil danach zwei Schübe statt einem in die Schätzung eingehen.
-
-Eine Deutung verbindet den Befund mit der geldpolitischen Delegation: Mit der Europäischen Währungsunion, der Unabhängigkeit der Europäischen Zentralbank und zwei Jahrzehnten niedriger Raten verschwand das Thema aus dem Alltagsbetrieb und kehrt seitdem nur als Schockthema zurück. Dass die Daten eher 1999 als 1990 wählen, spricht für diese Lesart und gegen die Wiedervereinigung als Ursache. Ganz trägt sie aber nicht, denn die Bundesbank war schon seit 1957 unabhängig. Hinzu kommt eine zweite Lesart: Bis in die 1980er Jahre lag Preispolitik auch in der Hand von Parlament und Regierung, über das Stabilitätsgesetz von 1967, die Konzertierte Aktion und administrierte Preise. Preisstabilität war Teil des Parteienstreits, wie die Debatte über das deutsche Inflationstrauma zeigt (Barkhausen \& Teupe, 2025). Mit dem Rückzug dieser Instrumente und der Übertragung der Geldpolitik nach Frankfurt entfiel der Anlass für die Dauerdebatte. Beide Lesarten ergänzen sich; welche überwiegt, lässt sich mit einer Wortzählung nicht entscheiden.
-
-\section{Befund 3: Hinweise auf eine Schwelle bei knapp 4 \%}
-
-Die Literatur zur Inflationsaufmerksamkeit arbeitet mit Schwellenmodellen: Unterhalb einer bestimmten Rate kümmert sich kaum jemand um Inflation, oberhalb springt die Aufmerksamkeit an. Korenok et al.~(2026) finden solche Schwellen aus Such- und Twitterdaten für die meisten von 38 Ländern, typischerweise zwischen 2 \% und 4 \%. Pfäuti (2024) schätzt sie für die USA auf rund 4 \%.
-
-Dieselbe Frage lässt sich an der Plenumsreihe stellen. Ich suche den Bruchpunkt über ein Gitter und verlange, dass auf jeder Seite mindestens 15 \% der Jahre liegen, abgerundet auf ganze Jahre (bei 36 Jahren also fünf), damit kein Einzeljahr den Punkt bestimmt. Für die Zeit ab 1990 ergibt sich eine Schwelle bei 3,7 \%. Unterhalb bewegt die Rate die Debatte kaum, oberhalb steigt die Zahl der Preiswörter um gut zwei Drittel je Prozentpunkt. Für die Zeit davor findet sich keine gesicherte Schwelle, was zum zweiten Befund passt.
-
-\begin{table}[tb]
-\caption{Geschätzte Schwelle}\label{tab:schwelle}
-\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}l S[table-format=1.1] S[table-format=2.0] S[table-format=-1.3] S[table-format=-1.3]@{}}
-\toprule
-Zeitraum & {Schwelle in \%} & {Jahre ab Schwelle} & {Steigung unterhalb} & {Steigung oberhalb} \\
-\midrule
-1951 bis 2025 & 1,0 & 64 & -0,089 & 0,145 \\
-1951 bis 1989 & 3,3 & 15 & 0,103 & -0,025 \\
-1990 bis 2025 & 3,7 & 5 & 0,084 & 0,521 \\
-\bottomrule
-\end{tabular*}
-\begin{tablenotes}Abhängige Größe ist der Logarithmus der Treffer je Million Wörter; erklärende Größen sind die Rate, die Rate oberhalb der Schwelle und der Vorjahreswert. Gitter von 0,5 \% bis 7,0 \% in Schritten von 0,1 Prozentpunkten. Für die Zeit ab 1990 hat der Zusatzterm oberhalb der Schwelle bei gegebener Schwelle einen p-Wert von 0,011 (HAC-Standardfehler mit drei Lags). Berücksichtigt man, dass die Schwelle aus 66 Kandidaten gesucht wurde, liegt der p-Wert bei 0,14 (Bootstrap nach Hansen, 1996, 2.000 Ziehungen).\par\textit{Quellen:} Fobbe (2026); Statistisches Bundesamt; eigene Berechnungen.\end{tablenotes}
-\end{table}
-
-
-Der Wert liegt im Bereich der internationalen Schätzungen, statistisch gesichert ist er aber nicht: Ab der Schwelle liegen nur fünf Jahre, 1991 bis 1993 und 2022 bis 2023, bei 36 Beobachtungen insgesamt, und der Test mit Gittersuche verwirft das lineare Modell nicht. Der Befund ist ein Hinweis, der zu Haushalts- und Mediendaten passt, kein eigener Beleg.
-
-Abweichend von der Literatur: Korenok und Munro (2024) beschreiben, dass die Aufmerksamkeit nach dem Rückgang der Inflation zwei- bis dreimal so hoch bleibt wie vor dem Anstieg. Die EZB findet, dass die Aufmerksamkeit in den Nachrichten über dem Niveau vor dem Schock bleibt und Wahrnehmungen und Erwartungen etwas erhöht bleiben (Aarab et al., 2025). Im Bundestag ist davon wenig zu sehen: Nach dem Gipfel 2022 halbierte sich die Reihe binnen eines Jahres, ohne die Inflationsausgleichsprämie fiel sie sogar auf gut zwei Fünftel; 2025 liegt sie bei 47, von Januar bis September 2026 bei 50, bei einer Rate von 2,6 \%, und damit wieder nahe am Niveau der Jahre vor dem Schock. Nach 1973 dauerte dieselbe Halbierung zwei Jahre, allerdings fiel die Rate damals auch langsamer. Ob das Parlament schneller vergisst oder andere Krisen die Tagesordnung füllen, lässt sich hier nicht entscheiden.
-
-\section{Befund 4: Anfragen erfassen den ersten Schub nicht}
-
-Die Anfragen warnen davor, Aufmerksamkeit mit nur einem Werkzeug zu messen. Bis zum Abruf im November 2026 tragen insgesamt 78 Anfragen ein Preiswort im Titel. Davon betreffen 44 einzelne Preise und das Preisrecht, elf das Preisniveau als Ganzes und vier die Messung. Elf nutzen die Inflation nur als Anlass in einem anderen Politikfeld, vier betreffen Beschaffungskosten des Bundes, vier sind Fehltreffer.
-
-Entscheidend ist der zeitliche Verlauf (Abbildung~\ref{fig:instrumente}). Von 1949 bis 1995 fragten Abgeordnete in Kleinen und Großen Anfragen nur zweimal nach Preisniveau oder Messung, 1971 und 1972. Für makroökonomische Themen war dieses Instrument jahrzehntelang kaum in Gebrauch, auch in den Jahren 1973 bis 1975, als das Plenum so viel über Preise sprach wie nie wieder bis 2022. Mit 15 einschlägigen Anfragen in 77 Jahren ist die Reihe zu dünn für statistische Aussagen; sie dient hier als Hinweis zur Messung.
+Weniger sicher ist die stärkere Reaktion auf die Rate nach dem Bruch. Mit 2022 ist sie groß und klar, ohne den jüngsten Schub halbiert sie sich und ist nicht mehr gesichert (Spalte 4). Sie beruht im Kern auf einer Episode. Abbildung~\ref{fig:2} zeigt beides: Die Punktwolke nach 1999 liegt tiefer und ist steiler, die Steilheit tragen aber 2022 und 2023. Auch eine Schwelle, ab der die Debatte anspringt, wie sie Korenok et al. (2026) und Pfäuti (2024) für Haushalte bei 2~\% bis 4~\% finden, lässt sich nicht sichern: Eine Gittersuche ab 1990 findet 3,7~\%, liegt damit aber auf der Mindestbesetzung von fünf Jahren, und der Bootstrap nach Hansen (1996) verwirft das lineare Modell nicht (p = 0,14).
 
 \begin{figure}[tb]
-\caption{Zwei Instrumente, ein Thema}\label{fig:instrumente}
-\includegraphics[width=\linewidth]{abbildungen/Abb2_Instrumente.pdf}
-\begin{figurenotes}Oben: Preiswörter im Plenum je Million Wörter. Unten: Kleine und Große Anfragen zu Preisniveau und Messung je 1.000 Anfragen des Jahres, Jahreswerte ab 1952. Grau hinterlegt: 1973 bis 1975.\par\textit{Quellen:} Deutscher Bundestag, DIP; Fobbe (2026); eigene Berechnungen.\end{figurenotes}
+\caption{Preiswörter und Inflationsrate vor und ab 1999}\label{fig:2}
+\includegraphics[width=\linewidth]{abbildungen/Abb2_Reaktion.pdf}
+\begin{figurenotes}Jeder Punkt ist ein Jahr. Linie: Ausgleichsgerade des Logarithmus auf die Rate je Zeitraum.\par\textit{Quellen:} Fobbe (2026); Statistisches Bundesamt; eigene Berechnungen.\end{figurenotes}
 \end{figure}
 
-Kristensen et al.~(2023) zeigen an über 220.000 parlamentarischen Anfragen aus sieben Ländern, dass Parlamente stärker auf Verschlechterung als auf Verbesserung von Problemindikatoren reagieren. Ihr Untersuchungszeitraum endet 2015 und erfasst den jüngsten Preisschock nicht. Für Deutschland zeigt die hier vorgelegte Reihe: Wer Aufmerksamkeit für die Inflation über Anfragen misst, kann den ersten Ölpreisschock nicht erfassen.
+\section{Was die Halbierung nicht erklärt}
+
+Drei mechanische Erklärungen liegen nahe; keine trägt. Erstens der Nenner: Die Protokolle enthalten Anlagen und Verfahrenstext, deren Anteil sich ändert. Auf reinem Redetext ist der Befund derselbe (Spalte 3). Zweitens eine breitere Tagesordnung, die jedes Thema verdünnt: In Jahren mit Raten unter 3~\% fielen im Redetext Wörter zu Arbeitslosigkeit, Haushalt und Wachstum nach 1999 nur auf 86~\% bis 98~\% ihres früheren Medians, Preiswörter auf 49~\%. Misst man die Preisrede an diesen drei Feldern, bleibt der Niveaubruch gesichert, auch ohne die Schübe (p = 0,04). Drittens ein anderes Vokabular für dasselbe: Ausdrücke wie Preissteigerung oder Teuerung gingen noch stärker zurück, von 35 auf 10 je Million Wörter.
+
+Verschoben hat sich die Debatte dennoch. Wörter zu Energiepreisen, Preisbremsen und Heizkosten stiegen vom Median 6 je Million Wörter in den Jahren 1951 bis 1969 auf 59 in den Jahren 2010 bis 2021; 2022 erreichten sie 628. Seit 1999 spricht das Plenum über Preise vor allem als Energiepreise, über das Preisniveau nur im Schub. Wörter der staatlichen Preis- und Lohnsteuerung, etwa Konzertierte Aktion, Stabilitätsgesetz, Preisstopp und Lohnleitlinien, fielen in ruhigen Jahren auf ein Siebtel.
+
+Wer spricht, zeigt eine Auswertung nach Fraktionen mit Open Discourse. In den Schüben redet die Opposition deutlich mehr über Preise als Regierung und Koalition, 1973 mit 905 gegen 263 Preiswörter je Million Wörter, 2022 mit 658 gegen 356. Der Rückgang des Grundniveaus trifft dagegen alle Fraktionen; CDU/CSU, SPD und FDP lagen 2010 bis 2021 bei einem Zehntel bis einem Drittel ihrer Werte von 1970 bis 1989. Neue Fraktionen mit anderen Themen erklären ihn nicht.
+
+\section{Zwei Lesarten}
+
+Eine Lesart verbindet den Bruch mit der geldpolitischen Delegation: Mit der Währungsunion und der Unabhängigkeit der Europäischen Zentralbank verschwand das Preisniveau aus dem Alltagsbetrieb und kehrt nur im Schub zurück. Dazu passt, dass die Daten den Bruch um 2000 legen und nicht 1990. Dass Politiker die Geldpolitik der EZB durchaus kommentieren, meist mit dem Wunsch nach niedrigeren Zinsen, zeigen Ehrmann und Fratzscher (2011); im Bundestag stiegen Wörter zu Zins und Geldpolitik nach 1999 in ruhigen Jahren um ein Viertel bis die Hälfte. Ganz trägt die Lesart nicht, denn die Bundesbank war schon seit 1957 unabhängig.
+
+Die zweite Lesart betont die Instrumente. Bis in die 1980er Jahre lag Preispolitik auch bei Parlament und Regierung, über das Stabilitätsgesetz von 1967, die Konzertierte Aktion und administrierte Preise. Preisstabilität war Teil des Parteienstreits, wie die Debatte über das deutsche Inflationstrauma zeigt (Barkhausen \& Teupe, 2025). Mit dem Rückzug dieser Instrumente entfiel der Anlass für die Dauerdebatte; der Einbruch ihres Vokabulars stützt diese Lesart. Beide Lesarten ergänzen sich. Welche überwiegt, entscheidet eine Wortzählung nicht.
+
+\section{Nach dem Schub von 2022}
+
+Korenok und Munro (2024) finden, dass die Aufmerksamkeit nach dem Rückgang der Inflation zwei- bis dreimal so hoch bleibt wie vor dem Anstieg; die EZB beschreibt Ähnliches für Nachrichten (Aarab et al., 2025). Im Bundestag ist es ebenso. Die Reihe halbierte sich zwar binnen eines Jahres nach dem Gipfel, 2025 lag sie mit 47 Preiswörtern je Million Wörter aber beim 2,4-Fachen des Mittels der Jahre 2015 bis 2020, bei einer Rate von 2,2~\% statt rund 1~\%. Von Januar bis September 2026 lag sie bei 50.
+
+\section{Befund 3: Anfragen zeigen den ersten Schub nicht}
+
+Die Anfragen warnen davor, Aufmerksamkeit mit nur einem Werkzeug zu messen. Bis zum Abruf im November 2026 tragen 78 Anfragen ein Preiswort im Titel. Davon betreffen 44 einzelne Preise und das Preisrecht, elf das Preisniveau als Ganzes und vier die Messung; die übrigen nutzen die Inflation als Anlass in einem anderen Feld, betreffen Beschaffungskosten des Bundes oder sind Fehltreffer.
+
+Von 1949 bis 1995 fragten Abgeordnete nur zweimal im Titel nach Preisniveau oder Messung, 1971 und 1972, auch nicht in den Jahren 1973 bis 1975, als das Plenum so viel über Preise sprach wie nie wieder bis 2022 (Abbildung~\ref{fig:3}). Alle 15 einschlägigen Anfragen sind Kleine Anfragen; Große Anfragen mit Preiswort im Titel gibt es nur fünf, alle vor 1965 und zu einzelnen Preisen wie Kohle und Lebensmitteln. Die Aussage gilt für Titel. Kristensen et al. (2023) codieren dagegen den Inhalt von Anfragen in sieben Ländern; ihr Zeitraum endet 2015. Wer Inflationsaufmerksamkeit über Anfragetitel misst, verfehlt den ersten Ölpreisschock.
 
 \begin{figure}[tb]
-\caption{Anfragen zu Preisen nach Art des Gegenstands}\label{fig:anfragen}
-\includegraphics[width=\linewidth]{abbildungen/Abb3_Anfragen_nach_Art.pdf}
-\begin{figurenotes}Oben: Anfragen zu einzelnen Preisen und zum Preisrecht (schwarz) und zu Preisniveau und Messung (grau), je 1.000 Anfragen, zentriertes gleitendes Fünfjahresmittel. Unten: Inflationsrate. Der hohe Wert der 1950er Jahre geht vollständig auf Anfragen zu einzelnen Preisen und zum Preisrecht zurück.\par\textit{Quellen:} Deutscher Bundestag, DIP; Statistisches Bundesamt; eigene Berechnungen.\end{figurenotes}
+\caption{Zwei Instrumente, ein Thema}\label{fig:3}
+\includegraphics[width=\linewidth]{abbildungen/Abb3_Instrumente.pdf}
+\begin{figurenotes}Oben: Preiswörter im Plenum je Million Wörter. Unten: Kleine und Große Anfragen zu Preisniveau und Messung je 1.000 Anfragen des Jahres. Grau hinterlegt: 1973 bis 1975.\par\textit{Quellen:} Deutscher Bundestag, DIP; Fobbe (2026); eigene Berechnungen.\end{figurenotes}
 \end{figure}
 
 \section{Was folgt daraus}
 
-Erstens ein methodischer Punkt. Plenarprotokolle sind als Quelle für Aufmerksamkeitsmaße unterschätzt. Sie liegen maschinenlesbar und lückenlos seit 1949 vor, sie sind frei von Erhebungseffekten, und sie messen nicht, was Haushalte wahrnehmen, sondern was politisch verhandelt wird. Für Fragen der politischen Ökonomie der Geldpolitik ist das die näher liegende Größe.
+Erstens ein methodischer Punkt. Plenarprotokolle sind als Quelle für Aufmerksamkeitsmaße unterschätzt. Sie liegen maschinenlesbar und lückenlos seit 1949 vor, sind frei von Erhebungseffekten und messen, was politisch verhandelt wird, nicht was Haushalte wahrnehmen.
 
-Zweitens ein inhaltlicher. Seit 1990 reagiert das Parlament kaum auf Raten nahe dem Zielwert von 2 \% und kräftig erst bei großen Anstiegen. Eine Grenze um 4 \%, wie sie Haushalts- und Mediendaten nahelegen (Korenok et al., 2026; Pfäuti, 2024), passt dazu, ist mit 36 Jahren und zwei Schüben aber nicht zu sichern. Der Bereich knapp oberhalb des Ziels ist politisch weitgehend still. Als Zeichen glaubwürdiger Delegation ist die Stille erwünscht, weil sie die Notenbank vor kurzfristigem Druck schützt. Als Frage der demokratischen Kontrolle ist sie heikel, weil Abweichungen vom Ziel lange ohne parlamentarische Debatte bleiben, nach oben wie nach unten; die Jahre zu niedriger Inflation in den 2010er Jahren lösten im Bundestag kaum Debatten aus. Für die Kommunikation der Notenbanken heißt das: Wer das Parlament erreichen will, muss es früh tun.
+Zweitens ein wirtschaftshistorischer. Das Preisniveau war in der Bonner Republik ein Dauerthema des Parlaments und ist es seit der Währungsunion nicht mehr. Der Wandel betrifft alle Fraktionen und fällt mit dem Ende parlamentarischer Preis- und Lohnsteuerung und der Delegation nach Frankfurt zusammen. Ob die Aufmerksamkeit seither stärker auf Schübe reagiert, lässt sich mit einer einzigen Episode nicht sichern.
 
-Drittens eine Erwartung für die nächsten Jahre. Der schnelle Rückbau nach 2022 spricht dafür, dass die politische Dringlichkeit des Themas rascher verfällt als die Aufmerksamkeit der Haushalte, die laut Umfragen und Suchdaten länger erhöht bleibt. Parlament und Öffentlichkeit laufen damit in verschiedenen Takten.
+Drittens eine Hypothese zur Kontrolle der Geldpolitik. Wenn das Parlament bei Raten nahe dem Ziel kaum über das Preisniveau spricht, schützt das die Notenbank vor kurzfristigem Druck, lässt Abweichungen vom Ziel aber lange ohne parlamentarische Debatte; die Jahre zu niedriger Inflation in den 2010er Jahren lösten im Bundestag kaum Preisdebatten aus. Ob diese Stille Glaubwürdigkeit oder Desinteresse ausdrückt, zeigen die Daten nicht.
 
 \section{Grenzen}
 
-Das Maß zählt Wörter, nicht Positionen. Es unterscheidet nicht, ob jemand vor Inflation warnt oder sie für überschätzt hält. Eine Auswertung nach Fraktionen mit Open Discourse (Richter et al., 2023) zeigt: In den Schüben spricht die Opposition mehr über Preise als die Regierung, 1973 gut dreimal so viel, und der Rückgang nach 1990 trifft alle Fraktionen. Die Wortfelder sind eine Setzung; die Stichprobe zeigt eine Trefferqualität von 89 \%, Treffer, die das Wortfeld verfehlt, sind damit nicht erfasst. Die Einstufung der Stichprobe stammt von Sprachmodellen; eine menschliche Zweitcodierung steht aus. Beide Schübe kamen über die Energiepreise; ob die Reihe Aufmerksamkeit für das Preisniveau oder für Energie misst, trennt das Maß nicht. Die Protokolle der frühen Wahlperioden stammen aus der Texterkennung gescannter Vorlagen; Lesefehler sind möglich. Ein Vergleich mit anderen Parlamenten würde zeigen, ob der Wandel nach 1990 deutsch ist. Schließlich bleibt die Zahl der Beobachtungen klein: 75 Jahre in den Schätzungen, davon fünf ab der geschätzten Schwelle. Daten und Skripte liegen offen unter \url{https://github.com/hungerland-macro/PREISREDE}.
+Das Maß zählt Wörter, nicht Positionen. Es unterscheidet nicht, ob jemand vor Inflation warnt oder sie für überschätzt hält. Die Wortfelder sind eine Setzung. Die Trefferqualität ist geprüft, die Vollständigkeit nur indirekt über andere Preiswörter; eine menschliche Codierung von Treffern und von Stellen ohne Treffer steht aus. Beide Schübe kamen über die Energiepreise; die Reihe trennt Aufmerksamkeit für das Preisniveau nicht vollständig von Aufmerksamkeit für Energie. Die Protokolle der frühen Wahlperioden stammen aus der Texterkennung; Lesefehler sind möglich. Jahresdaten mit 75 Beobachtungen und wenigen Episoden erlauben keine Aussage über eine allgemeine Reaktionsfunktion. Ein Vergleich mit anderen Parlamenten würde zeigen, ob der Wandel deutsch ist. Daten und Skripte liegen offen unter \url{https://github.com/hungerland-macro/PREISREDE}.
 
 \section*{Hinweis zum Einsatz von KI}
 
-Bei der Erstellung des Beitrags kam das Sprachmodell Claude (Anthropic) zum Einsatz. Es schrieb nach Vorgaben des Autors die Python-Skripte für den Abruf der Anfragen, die Wortzählung im Korpus, die Schätzungen und die Abbildungen, entwarf Teile des Textes, prüfte Zahlen und Literaturangaben gegen die Originalquellen, nahm die erste Bewertung der Trefferstichprobe vor und redigierte den Text. Es schlug auch die Einteilung der 78 Anfragen in sechs Kategorien vor, die der Autor übernahm; für 76 davon wurde sie blind wiederholt. Die blinde Wiederholung der Stichprobenbewertung übernahmen ChatGPT, Gemini, DeepSeek und Claude in getrennten Sitzungen ohne Kenntnis der Erstcodierung. Fragestellung, Wortfelder, Deutung der Ergebnisse und die Endfassung verantwortet der Autor. Skripte und Daten liegen offen, sodass alle Ergebnisse nachgerechnet werden können.
+Bei der Erstellung des Beitrags kam das Sprachmodell Claude (Anthropic) zum Einsatz. Es schrieb nach Vorgaben des Autors die Python-Skripte für den Abruf der Anfragen, die Wortzählungen, die Schätzungen und die Abbildungen, entwarf Teile des Textes, prüfte Zahlen und Literaturangaben gegen die Originalquellen und redigierte den Text. Es nahm die Erstbewertung der Trefferstichprobe vor und schlug die Einteilung der 78 Anfragen vor, die der Autor übernahm. Die blinde Wiederholung beider Bewertungen übernahmen ChatGPT, Gemini, DeepSeek und Claude in getrennten Sitzungen ohne Kenntnis der Erstcodierung. Fragestellung, Wortfelder, Deutung der Ergebnisse und die Endfassung verantwortet der Autor. Skripte und Daten liegen offen, sodass alle Ergebnisse nachgerechnet werden können.
 
 \section*{Literatur}
+
 \begin{literatur}
 \item Aarab, I., Bańbura, M., Bobeica, E. \& Leguay, E. (2025). Monitoring attention to inflation in the news. \emph{Economic Bulletin}, 6/2025, Box 5. Europäische Zentralbank.
 
 \item Barkhausen, D. \& Teupe, S. (2025). The German inflation trauma: Weimar's policy lessons between persistence and reconstruction. \emph{Jahrbücher für Nationalökonomie und Statistik}, \emph{245}(3), 269--332. \url{https://doi.org/10.1515/jbnst-2023-0045}
 
 \item Bracha, A. \& Tang, J. (2025). Inflation levels and (in)attention. \emph{Review of Economic Studies}, \emph{92}(3), 1564--1594. \url{https://doi.org/10.1093/restud/rdae063}
+
+\item Breunig, C. \& Schnatterer, T. (2019). Political agendas in Germany. In F. R. Baumgartner, C. Breunig \& E. Grossman (Hrsg.), \emph{Comparative policy agendas: Theory, tools, data} (S. 97--104). Oxford University Press. \url{https://doi.org/10.1093/oso/9780198835332.003.0010}
+
+\item Ehrmann, M. \& Fratzscher, M. (2011). Politics and monetary policy. \emph{Review of Economics and Statistics}, \emph{93}(3), 941--960. \url{https://doi.org/10.1162/REST\_a\_00113}
 
 \item Fobbe, S. (2026). \emph{Corpus der Plenarprotokolle des Deutschen Bundestages (CPP-BT)} (Version 2026-09-19) {[}Datensatz{]}. Zenodo. \url{https://doi.org/10.5281/zenodo.22844952}
 
@@ -209,7 +199,8 @@ Bei der Erstellung des Beitrags kam das Sprachmodell Claude (Anthropic) zum Eins
 
 \item Rancourt, M.-A., Déry, A., Fortier-Chouinard, A. \& Dufresne, Y. (2025). Understanding politicians' discourse on inflation and cost of living in Canada. \emph{Parliamentary Affairs}. \url{https://doi.org/10.1093/pa/gsaf052}
 
-\item Richter, F., Koch, P., Franke, O., Kraus, J., Kuruc, F., Thiem, A., Högerl, J., Heine, S. \& Schöps, K. (2023). \emph{Open Discourse} (Version 4) [Datensatz]. Harvard Dataverse. \url{https://doi.org/10.7910/DVN/FIKIBO}
+\item Richter, F., Koch, P., Franke, O., Kraus, J., Kuruc, F., Thiem, A., Högerl, J., Heine, S. \& Schöps, K. (2023). \emph{Open Discourse} (Version 4) {[}Datensatz{]}. Harvard Dataverse. \url{https://doi.org/10.7910/DVN/FIKIBO}
+
 \item Statistisches Bundesamt. (2023). \emph{Verbraucherpreisindizes für Deutschland. Lange Reihen ab 1948} (Ausgabe Dezember 2022).
 
 \item Statistisches Bundesamt. (2026). \emph{Verbraucherpreisindex für Deutschland, 2020 = 100, Jahresdurchschnitte} {[}Datensatz, abgerufen über die Zeitreihendatenbank der Deutschen Bundesbank, BBDP1.A.DE.N.VPI.C.A00000.I20.A{]}.

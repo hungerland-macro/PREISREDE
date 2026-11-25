@@ -1,0 +1,49 @@
+# Prüfungen nach den Gutachten vom 25.11.2026
+
+Kurzbericht zu den Rechnungen, die in die überarbeitete Fassung eingegangen sind. Skripte: `skripte/schaetzung_revision.py`, `skripte/wortfelder.py`.
+
+## Modell
+
+Spalte 2 der ersten Fassung (Veränderungen, Anstieg und Rückgang getrennt, Bruch 1990) ist ersetzt. Ihre Konstante ab 1990 (−0,253) ließ sich nicht als Trend lesen. Rückgänge gingen dort mit negativem Vorzeichen ein. Neu ist ein Niveaumodell mit Vorjahreswert (Fehlerkorrekturform), in dem ein Bruch Niveau und Steigung verschiebt.
+
+## Ergebnisse
+
+| Prüfung | Langfristwert bei 2 % vor → ab Bruch | Steigung zusätzlich ab Bruch (p) |
+|---|---|---|
+| Bruch 1999 | 70 → 34 | 0,240 (0,000) |
+| Bruch 1990 | 76 → 33 | 0,142 (0,110) |
+| Bruch 2002 (vom Test gewählt, p = 0,001) | 70 → 30 | 0,256 (0,000) |
+| Index aller Haushalte, 1964–2025 | 74 → 34 | 0,232 (0,000) |
+| nur Redetext | 82 → 45 | 0,255 (0,000) |
+| ohne 2021–23 | 70 → 29 | 0,138 (0,099) |
+| ohne 1951–52 und 2021–23 | 73 → 30 | 0,125 (0,119) |
+| ohne 1951–52 und 2021–23, Bruch 1990 | 79 → 29 | −0,008 (0,883) |
+
+Das halbierte Grundniveau hält in allen Fällen. Die steilere Reaktion nach dem Bruch hängt an 2022.
+
+## Nenner und Placebos
+
+Median in Jahren mit Rate unter 3 %, ab 1999 im Verhältnis zu davor:
+
+| Feld | Protokoll | nur Redetext |
+|---|---:|---:|
+| Preisniveau | 0,42 | 0,49 |
+| Arbeitslosigkeit | 0,74 | 0,98 |
+| Haushalt | 0,67 | 0,86 |
+| Wachstum | 0,73 | 0,92 |
+| Verteidigung | 0,74 | 0,86 |
+| Energiepreise, Preisbremsen | 3,89 | 5,06 |
+| Geldpolitik, Zins | 1,27 | 1,54 |
+| Wechselkurs, Aufwertung | 0,40 | 0,41 |
+| Preis- und Lohnsteuerung | 0,15 | 0,15 |
+
+Gemessen an Arbeitslosigkeit, Haushalt und Wachstum bleibt der Niveaubruch gesichert (Protokoll ohne die Episoden p = 0,04; Redetext p = 0,01).
+
+## Weitere Punkte
+
+- Nach dem Schub: 2025 lag die Reihe beim 2,4-Fachen des Mittels 2015–2020. Die Aussage der ersten Fassung, das Parlament vergesse schneller als Haushalte, ist gestrichen.
+- Kappa der Trefferstichprobe: 0,90 mit allen, 0,88 ohne die blinde Claude-Codierung, 0,93 unter ChatGPT, Gemini und DeepSeek allein.
+- Das Inflationsausgleichsgesetz fällt unter dieselbe Prüfung wie die Prämie (Suchmuster `inflationsausgleich…`).
+- 1969 erreichten Aufwertung und Wechselkurs 259 Treffer je Million Wörter, vor dem Sprung der Preisrede 1970.
+- Schwelle: zum Absatz herabgestuft (Mindestbesetzung, p = 0,14).
+- Menschliche Codierung: Bogen in `daten/handcodierung/`, Ergebnis steht aus.

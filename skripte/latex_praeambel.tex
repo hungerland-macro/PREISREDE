@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\usepackage[ngerman]{babel}
+\usepackage[babel]{csquotes}
+\usepackage[a4paper,margin=2.6cm]{geometry}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{unicode-math}
+\setmathfont{texgyrepagella-math.otf}
+\usepackage{siunitx}
+\sisetup{output-decimal-marker={,}, group-separator={.}, table-number-alignment=center, input-symbols={()}, table-align-text-post=false, mode=text}
+\usepackage[font=small,labelfont={bf,sf},textfont=sf,justification=raggedright,singlelinecheck=false,skip=4pt]{caption}
+\captionsetup[figure]{name=Abbildung}
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\sffamily\bfseries\large}{}{0pt}{}
+\titlespacing*{\section}{0pt}{1.4em}{0.5em}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\usepackage{setspace}
+\setstretch{1.12}
+\setlength{\emergencystretch}{1.5em}
+\newenvironment{figurenotes}{\par\vspace{2pt}\footnotesize\raggedright}{\par}
+\newenvironment{tablenotes}{\par\vspace{4pt}\footnotesize\raggedright}{\par}
+\newenvironment{literatur}{\begin{list}{}{\setlength{\leftmargin}{1.5em}\setlength{\itemindent}{-1.5em}\setlength{\itemsep}{0.35em}\small}\raggedright}{\end{list}}
+\hypersetup{pdftitle={Wann das Parlament über Preise spricht},pdfauthor={Wolf-Fabian Hungerland},pdflang={de-DE}}
+
+\begin{document}
+\begin{flushleft}
+{\sffamily\bfseries\LARGE @TITEL@\par}
+\vspace{0.4em}
+{\sffamily\large @UNTER@\par}
+\vspace{1em}
+{\sffamily Wolf-Fabian Hungerland\footnote{Der Beitrag gibt die persönliche Auffassung des Autors wieder. Daten und Skripte: \url{https://github.com/hungerland-macro/PREISREDE}.}\par}
+\vspace{0.3em}
+{\sffamily\small Fassung vom @DATUM@\par}
+\end{flushleft}
+\vspace{0.8em}
+\noindent\begin{minipage}{\linewidth}\small
+\textsf{\textbf{Abstract.}} @ABSTRACT@\par\vspace{0.4em}
+\textsf{\textbf{JEL:}} @JEL@
+\end{minipage}
+\vspace{0.6em}
+
+
+

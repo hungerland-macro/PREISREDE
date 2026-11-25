@@ -142,7 +142,7 @@ def abb2():
     b.axvspan(1972.5, 1975.5, color="#f0f0f0", lw=0, zorder=0)
     rahmen(b, 0, 8.5, [0, 2, 4, 6, 8])
     titel(b, "Anfragen zu Preisniveau und Messung", "je 1000 Anfragen des Jahres")
-    speichern(fig, "Abb2_Instrumente")
+    speichern(fig, "Abb3_Instrumente")
 
 
 def fenster(z, n, breite=5):
@@ -173,8 +173,42 @@ def abb3():
     speichern(fig, "Abb3_Anfragen_nach_Art")
 
 
+def abb_reaktion():
+    """Preiswörter gegen Inflationsrate, vor und ab 1999, mit Langfristlinie aus dem Fehlerkorrekturmodell."""
+    import numpy as np
+    sys.path.insert(0, HIER)
+    from schaetzung_revision import ecm
+    _, d = ecm(P, bruch=1999)
+    m, _ = ecm(P, bruch=1999)
+    c, cB, phi, bb, bB = m.params
+    fig, axes = plt.subplots(1, 2, figsize=(15 * CM, 6.4 * CM), sharey=True, gridspec_kw={"wspace": 0.12})
+    for ax, (von, bis, reg, name) in zip(axes, ((1951, 1998, 0, "1951 bis 1998"), (1999, 2025, 1, "1999 bis 2025"))):
+        J = [j for j in range(von, bis + 1)]
+        ax.scatter([I[j] for j in J], [P[j] for j in J], s=7, color=INK, lw=0, zorder=3)
+        xs, ys = np.array([I[j] for j in J]), np.log([P[j] for j in J])
+        k, d0 = np.polyfit(xs, ys, 1)
+        x = np.linspace(xs.min(), xs.max(), 50)
+        ax.plot(x, np.exp(d0 + k * x), color=GRAU, lw=0.9)
+        ax.text(0.97, 0.04, f"+{komma(100 * (np.exp(k) - 1))} % je Prozentpunkt", transform=ax.transAxes, ha="right", fontsize=7.5, color=GRAU)
+        ax.set_yscale("log")
+        for s_ in ("top", "right"):
+            ax.spines[s_].set_visible(False)
+        ax.set_xlim(-1.5, 8.2); ax.set_ylim(8, 600)
+        ax.set_xticks([0, 2, 4, 6, 8]); ax.set_xticklabels([komma(t) for t in [0, 2, 4, 6, 8]])
+        ax.spines["bottom"].set_bounds(-1, 8)
+        ax.set_yticks([10, 30, 100, 300]); ax.set_yticklabels(["10", "30", "100", "300"])
+        ax.minorticks_off()
+        ax.text(0.0, 1.05, name, transform=ax.transAxes, fontsize=9, fontweight="bold", color=INK, va="bottom")
+        ax.set_xlabel("Inflationsrate, %", fontsize=8, color=GRAU)
+        for j in ((1973, 1951) if not reg else (2022, 2023, 2025)):
+            ax.annotate(str(j), (I[j], P[j]), xytext=(4, 0), textcoords="offset points", fontsize=7, color=INK, va="center")
+    axes[0].text(-0.16, 1.05, "", transform=axes[0].transAxes)
+    axes[0].set_ylabel("Preiswörter je Mio. Wörter (log)", fontsize=8, color=GRAU)
+    speichern(fig, "Abb2_Reaktion")
+
+
 if __name__ == "__main__":
     abb1()
     abb2()
-    abb3()
+    abb_reaktion()
     print("Abbildungen in", ZIEL)

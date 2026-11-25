@@ -204,12 +204,10 @@ def datenmappe(plenum, infl, anf, ziel):
         ("Abb1", ["Jahr", "Preiswörter je Mio. Wörter", "Inflationsrate in %"],
          [[j, plenum[j], infl.get(j)] for j in jahre]
          + [["2026, Jan.–Sep.", LAUFEND_PLENUM, LAUFEND[1]]]),
-        ("Abb2", ["Jahr", "Preiswörter je Mio. Wörter", "Anfragen zu Preisniveau und Messung je 1000 Anfragen"],
+        ("Abb2", ["Jahr", "Zeitraum", "Inflationsrate in %", "Preiswörter je Mio. Wörter"],
+         [[j, "1951-1998" if j < 1999 else "1999-2025", infl.get(j), plenum[j]] for j in jahre if 1951 <= j <= 2025]),
+        ("Abb3", ["Jahr", "Preiswörter je Mio. Wörter", "Anfragen zu Preisniveau und Messung je 1000 Anfragen"],
          [[j, plenum[j], round(1000 * ms[j] / nenner[j], 2) if j in ja else None] for j in jahre]),
-        ("Abb3", ["Jahr", "Anfragen zu einzelnen Preisen je 1000, Fünfjahresfenster",
-                  "Anfragen zu Preisniveau und Messung je 1000, Fünfjahresfenster", "Inflationsrate in %"],
-         [[j, round(f_e[j], 2) if j in ja else None, round(f_ms[j], 2) if j in ja else None, infl.get(j)]
-          for j in jahre]),
     ]
     ws = wb.active
     for i, (name, kopf, zeilen) in enumerate(blaetter):
@@ -221,8 +219,8 @@ def datenmappe(plenum, infl, anf, ziel):
         for z in zeilen:
             ws.append(z)
     q = wb.create_sheet("Quellen")
-    for z in [["Plenum", "Fobbe, S. (2026), CPP-BT, Version 2026-01-17, Zenodo, doi:10.5281/zenodo.18177196, CC0; eigene Zählung"],
-              ["Anfragen", "Deutscher Bundestag, DIP, Abruf 01.11.2026; eigene Codierung"],
+    for z in [["Plenum", "Fobbe, S. (2026), CPP-BT, Version 2026-09-19, Zenodo, doi:10.5281/zenodo.22844952, CC0; eigene Zählung"],
+              ["Anfragen", "Deutscher Bundestag, DIP, Abruf November 2026; eigene Codierung"],
               ["Inflation bis 1991", "Statistisches Bundesamt, Lange Reihen ab 1948 (12/2022), Preisindex für die Lebenshaltung, 4-Personen-Haushalte von Arbeitern und Angestellten mit mittlerem Einkommen, früheres Bundesgebiet"],
               ["Inflation ab 1992", "Statistisches Bundesamt, VPI Deutschland 2020 = 100, über Bundesbank BBDP1.A.DE.N.VPI.C.A00000.I20.A"]]:
         q.append(z)
@@ -238,9 +236,7 @@ if __name__ == "__main__":
     plt.rcParams["svg.fonttype"] = "none"
     plt.rcParams["pdf.fonttype"] = 42
     plenum, infl, anf = daten()
-    abbildung1(plenum, infl, ziel, schrift)
-    abbildung2(plenum, anf, ziel, schrift)
-    abbildung3(infl, anf, ziel, schrift)
+    # Die Abbildungen selbst erzeugt abbildungen_latex.py (kleine Vielfache statt zweiter Achse).
     datenmappe(plenum, infl, anf, ziel)
     print(f"Schrift: {schrift}. Abbildungen in {ziel}")
     if schrift != "Arial Narrow":
