@@ -9,7 +9,7 @@ Der Beitrag gibt die persönliche Auffassung des Autors wieder.
 
 ### Abstract
 
-In den 1950er und 1960er Jahren fiel in jeder 20. längeren Bundestagsrede ein Wort wie Inflation, Kaufkraftverlust oder Preisstabilität. In den 2000er und 2010er Jahren war es nur noch jede 56., obwohl die Inflation in beiden Zeiträumen meist unter 3 % lag. Der Beitrag zählt solche Wörter in allen 4.610 Plenarprotokollen von 1949 bis 2025. Das Parlament reagiert auf große Inflationsschübe, 1973 und 2022 fast gleich stark. Zwischen den Schüben aber spricht es seit etwa 2000 deutlich seltener darüber als früher: Das Preisniveau, in der Bonner Republik ein Dauerthema, ist zu einem Thema vor allem für Schübe geworden. Die Debatte wanderte zu Energiepreisen und Zinsen. Der Bruch fällt zeitlich mit dem Übergang der Geldpolitik auf die Europäische Zentralbank zusammen.
+In den 1950er und 1960er Jahren fiel in jeder 20. längeren Bundestagsrede ein Wort wie Inflation oder Preisstabilität, in den 2000er und 2010er Jahren nur noch in jeder 56., obwohl die Inflation meist unter 3 % lag. Der Beitrag zählt solche Wörter in allen 4.610 Plenarprotokollen von 1949 bis 2025. Auf große Inflationsschübe reagiert das Parlament, 1973 und 2022 fast gleich stark. Zwischen den Schüben spricht es seit etwa 2000 deutlich seltener über das Preisniveau. Die Debatte wanderte zu Energiepreisen und Zinsen. Der Bruch fällt zeitlich mit dem Übergang der Geldpolitik auf die Europäische Zentralbank zusammen.
 
 JEL-Codes: E31, E58, N14
 
